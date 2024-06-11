@@ -4,77 +4,114 @@
 
 /* custom.css */
 @layer base {
+  html{
+    @apply scroll-smooth
+  }
   body {
-    @apply mx-3 lg:mx-6 bg-white;
+    @apply bg-white overflow-x-hidden;
   }
   h1 {
-    @apply lg:text-4xl text-3xl 2xl:max-w-[800px] mx-auto lg:max-w-[70%] font-bold text-center mt-8 mb-32;
+    @apply lg:text-5xl md:text-4xl text-3xl mx-auto font-black text-pretty text-center;
+  } 
+  h2{
+    @apply relative lg:text-5xl md:text-4xl text-3xl font-bold mb-7
+  }
+  h2.title{
+    @apply text-center text-white
+  }
+  h2.title::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 150%;
+    z-index: -1;
+    @apply bg-jungle-green-600
   }
 }
 
 @layer components {
-  .navbar {
-    @apply flex justify-between py-4;
+  .header {
+    @apply flex items-center justify-between py-2 px-36;
+  }
+  nav li{
+    @apply px-2 py-1
   }
 
   .card {
-    @apply rounded-lg w-full max-w-[400px] h-96 flex items-end p-3 bg-cover;
+    @apply rounded-lg w-full md:aspect-square max-md:h-60 max-w-[600px] md:max-w-[400px] flex items-end p-3 max-md:mx-auto bg-cover;
   }
   .card .textContainer {
-    @apply p-3 bg-jungle-green-800/60 backdrop-blur-sm backdrop-filter rounded-lg;
+    @apply p-3 w-full bg-jungle-green-800/60 backdrop-blur-sm backdrop-filter rounded-lg;
+  }
+  .card .textContainer p{
+    @apply line-clamp-3
   }
 
   .sliderContainer{
-    @apply w-full relative h-[75vh] mx-auto flex overflow-hidden mb-8
+    @apply w-full relative h-[75vh] mx-auto flex overflow-hidden
   }
   .slideItem{
-    @apply absolute top-0 left-0 text-white rounded-lg grow content-center w-full h-full opacity-0 transition-opacity
+    @apply px-8 md:px-16 absolute top-0 left-0 text-white grow content-center w-full h-full opacity-0 transition duration-1000
   }
   .slideItem.active{
     @apply opacity-100
   }
   .slideItem img{
-    @apply absolute top-0 left-0 w-full h-full object-center object-cover -z-20
+    @apply absolute top-0 left-0 w-full h-full object-center object-cover -z-20 filter brightness-50
   }
   .slideItem h2{
-    @apply ml-16 text-white text-5xl font-bold
+    @apply text-white
   }
   .slideItem p{
-    @apply ml-16 text-lg max-w-lg mt-7
+    @apply text-lg max-w-lg mt-7
+  }
+  .sliderBtnContainer{
+    @apply flex justify-end gap-3 self-end
   }
   .sliderBtn{
-    @apply size-12 rounded-full flex justify-center items-center bg-jungle-green-300
+    @apply size-10 md:size-12 rounded-full flex justify-center items-center text-white bg-jungle-green-500
   }
-
-  .profile-card {
-    @apply w-80 h-96 rounded-lg overflow-hidden relative flex;
-  }
-  .profile-card img{
-    @apply absolute top-0 left-0 w-full object-cover h-[inherit] -z-10;
-  }
-  .profile-content {
-    @apply w-full h-full bg-gradient-to-t font-bold from-jungle-green-950/80 p-3 flex flex-col gap-1 justify-end;
-  }
-  .profile-content h4{
-    @apply text-xl text-white
-  }
-
   .dot-container {
-    @apply flex gap-4 absolute top-16 left-16;
+    @apply flex gap-4;
   }
   .dot {
-    @apply size-5 relative rounded-full border-2 border-jungle-green-300;
+    @apply size-4 md:size-5 relative rounded-full border-2 border-jungle-green-300;
   }
   .dot-inner {
-    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-3 rounded-full;
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-2 md:size-3 rounded-full;
   }
   .dot-inner.active{
     @apply bg-jungle-green-300
   }
 
+  .slider-track{
+    @apply w-full mx-auto flex gap-3 relative transform duration-300 ease-in-out
+  }
+  /* .profile-card {
+    @apply w-64 md:w-72 decoration-transparent shrink-0 aspect-[3/4] rounded-lg overflow-hidden relative flex transform duration-300 ease-in-out;
+  }
+  .profile-card img{
+    @apply absolute top-0 left-0 w-full object-cover h-[inherit] -z-10;
+  }
+  .profile-content {
+    @apply w-full h-full bg-gradient-to-t font-bold from-black/80 p-3 flex flex-col gap-1 justify-end;
+  }
+  .profile-content h4{
+    @apply text-xl text-white
+  } */
+  
+
   .btn {
     @apply size-12 rounded-full flex justify-center items-center bg-jungle-green-300;
   }
+
+  #joinUs .logo{
+    @apply p-2 !h-24 md:!h-32 w-auto
+  }
+
 }
 
 
