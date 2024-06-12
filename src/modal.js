@@ -21,8 +21,8 @@ bgSponsor.addEventListener("click", () => {
   sponsorModal.classList.add("hidden");
 });
 
-const menu = document.getElementById('mobile-menu');
-const bg = document.querySelector(".header .bgBlack")
+const menu = document.querySelector('#mobile-menu');
+const bg = document.querySelector("header .bgBlack")
 const li = document.querySelectorAll("#mobile-menu li")
 const toggleMenu = () => {
   console.log("Hello");
