@@ -1242,6 +1242,30 @@ nav li {
   background-color: rgb(245 245 246 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\/assets\/help\.jpg\'\)\] {
+  background-image: url('./assets/help.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/meet\.jpg\'\)\] {
+  background-image: url('./assets/meet.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/papper\.png\'\)\] {
+  background-image: url('./assets/papper.png');
+}
+
+.bg-\[url\(\.\/assets\/former\.jpg\)\] {
+  background-image: url(./assets/former.jpg);
+}
+
+.bg-\[url\(\.\/assets\/influencer\.jpg\)\] {
+  background-image: url(./assets/influencer.jpg);
+}
+
+.bg-\[url\(\.\/assets\/rassembler\.jpg\)\] {
+  background-image: url(./assets/rassembler.jpg);
+}
+
 .bg-\[url\(\'\.\.\/assets\/help\.jpg\'\)\] {
   background-image: url('../assets/help.jpg');
 }
