@@ -8,30 +8,42 @@
     <title>CJD</title>
   </head>
   <body>
-    <header class="header flex justify-between items-center py-4 md:px-8 bg-white shadow-md">
-      <img src="../assets/logo.jpg" alt="logo" class="w-16" />
-      <button id="menu-toggle" class="lg:hidden block text-black focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-      <nav class="hidden lg:flex flex-grow justify-end">
-        <ul class="flex gap-3 text-black text-base font-bold">
-          <li><a href="#hero" class="hover:text-jungle-green-600">Accueil</a></li>
-          <li><a href="#vision" class="hover:text-jungle-green-600">Vision</a></li>
-          <li><a href="#missions" class="hover:text-jungle-green-600">Missions</a></li>
-          <li><a href="#joinUs" class="hover:text-jungle-green-600">Rejoindre</a></li>
-        </ul>
-      </nav>
-      <div class="bgBlack hidden lg:hidden fixed top-0 left-0 w-full h-svh bg-black/50"></div>
-      <nav id="mobile-menu" class="hidden lg:hidden w-1/2 max-w-[400px] h-svh fixed text-xl z-40 top-0 right-0 bg-white shadow-md">
-        <ul class="flex flex-col items-center gap-3 mt-10 p-4 text-black text-base font-bold">
-          <li class="w-full"><a href="#hero" class="block mx-auto text-center hover:text-jungle-green-600">Accueil</a></li>
-          <li class="w-full"><a href="#vision" class="block mx-auto text-center hover:text-jungle-green-600">Vision</a></li>
-          <li class="w-full"><a href="#missions" class="block mx-auto text-center hover:text-jungle-green-600">Missions</a></li>
-          <li class="w-full"><a href="#joinUs" class="block mx-auto text-center hover:text-jungle-green-600">Rejoindre</a></li>
-        </ul>
-      </nav>
+    <header class="flex flex-col">
+      <div class="max-md:px-8 px-36 py-2 text-white text-xs bg-jungle-green-500 flex gap-4 justify-end">
+        <div class="flex gap-2 items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <p class="">+237 66546546565</p>
+        </div>
+        <div class="flex gap-2 items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <p class="">element@gmail.com</p>
+        </div>
+      </div>
+      <div class="flex justify-between items-center px-36 py-4 max-md:px-8 bg-white">
+        <img src="../assets/logo.jpg" alt="logo" class="w-16" />
+        <button id="menu-toggle" class="md:hidden block text-black focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <nav class="hidden md:flex flex-grow justify-end">
+          <ul class="flex gap-3 text-black text-base font-bold">
+            <li><a href="#hero" class="hover:text-jungle-green-600">Accueil</a></li>
+            <li><a href="#vision" class="hover:text-jungle-green-600">Vision</a></li>
+            <li><a href="#missions" class="hover:text-jungle-green-600">Missions</a></li>
+            <li><a href="#joinUs" class="hover:text-jungle-green-600">Rejoindre</a></li>
+          </ul>
+        </nav>
+        <div class="bgBlack hidden md:hidden fixed top-0 left-0 w-full h-svh bg-black/50"></div>
+        <nav id="mobile-menu" class="hidden md:hidden w-1/2 max-w-[400px] min-w-[250px] h-svh fixed text-xl z-40 top-0 right-0 bg-white shadow-md">
+          <ul class="flex flex-col items-center gap-3 mt-10 p-4 text-black text-base font-bold">
+            <li class="w-full"><a href="#hero" class="block mx-auto text-center hover:text-jungle-green-600">Accueil</a></li>
+            <li class="w-full"><a href="#vision" class="block mx-auto text-center hover:text-jungle-green-600">Vision</a></li>
+            <li class="w-full"><a href="#missions" class="block mx-auto text-center hover:text-jungle-green-600">Missions</a></li>
+            <li class="w-full"><a href="#joinUs" class="block mx-auto text-center hover:text-jungle-green-600">Rejoindre</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
   </div>
 
@@ -97,9 +109,7 @@ de nos populations.
 
     <section id="vision">
       <div class="bg-[url('../assets/help.jpg')] bg-cover bg-center w-full mx-auto overflow-hidden">
-        <div
-          class="bg-black/30 rounded-sm w-full backdrop-filter backdrop-blur-md px-8 md:px-16 py-10 md:py-20 text-center text-balance"
-        >
+        <div class="bg-black/30 rounded-sm w-full backdrop-filter backdrop-blur-md px-8 md:px-16 py-10 md:py-20 text-center text-balance">
           <h2 class=" text-white">Notre Vision</h2>
           <p class="text-white text-lg max-w-lg mx-auto block">
             Le CJD comme plateforme pour outiller, inspirer, connecter et
@@ -110,8 +120,8 @@ de nos populations.
       </div>
     </section>
 
-    <section id="missions">
-      <div class="w-full mx-auto rounded-lg overflow-hidden max-w-4xl">
+    <section id="missions" class="bg-jungle-green-600">
+      <div class="w-full mx-auto px-4 overflow-hidden max-w-4xl">
         <div class="rounded-sm w-full  text-jungle-green-50 py-16">
           <h2 class="title">Notre Mission</h2>
           <div class="flex justify-center max-md:flex-col gap-3">
@@ -151,18 +161,9 @@ de nos populations.
       </div>
     </section>
 
-    <section class="py-16 " id="bureau">
+    <section class="py-16 px-4 bg-gray-200" id="bureau">
       <h2 class="title text-center">Bureau Exécutif</h2>
-      <div class="w-full overflow-hidden mx-auto relative max-w-4xl">
-        <div class="absolute left-0 top-1/2 -transform-y-1/2 w-full z-10 flex justify-between">
-          <button class="sliderBtn prevBtn">
-            <i data-lucide="arrow-left" class="max-md:size-5">←</i>
-          </button>
-          <button class="sliderBtn nextBtn">
-            <i data-lucide="arrow-right" class="max-md:size-5">→</i>
-          </button>
-        </div>
-      <div class="slider-track">
+      <div class="mx-auto flex justify-center gap-4 flex-wrap max-w-4xl">
         <a href="https://www.linkedin.com/in/rosine-danielle-ekambi-soppo-baa88644/?originalSubdomain=fr" target="_blank" class="profile-card">
           <img src="../assets/1.jpg" alt="image" />
           <div class="text">
@@ -206,11 +207,10 @@ de nos populations.
           </div>
         </a>
       </div>
-        </div>
     </section>
 
     <section id="joinUs">
-      <div class="w-full mx-auto rounded-lg overflow-hidden text-jungle-green-100 py-16">
+      <div class="w-full  px-4 overflow-hidden text-jungle-green-100 py-16">
           <h2 class="title">Nous-rejoindre</h2>
           <p class="text-black text-lg mx-auto text-center block text-balance mx-4 mb-6">
             Nous accueillons toute personne désireuse d’atteindre son plein potentiel dans la gestion de ses fonctions managériales en se formant tout en participant à la formation de la communauté. 
@@ -267,7 +267,7 @@ de nos populations.
     <div class="modal joinUs fixed top-0 left-0 hidden z-30">
       <div class="bgModal w-svw h-svh flex justify-center items-center bg-black/60">
         <form action="" class="w-11/12 max-w-2xl max-h-[95vh] overflow-y-auto p-10 bg-white rounded-lg">
-          <h2 class="title text-3xl text-center mb-4 mt-4">Rejoignez nous</h2>
+          <h3 class="title text-3xl text-center mb-4 mt-4">Rejoignez nous</h3>
           <div class="flex gap-4">
             <div class="flex flex-col mb-4 w-full">
               <label for="name" class="text-base font-medium mb-2">Nom</label>
@@ -306,13 +306,32 @@ de nos populations.
 
     <section id="sponsors">
       <div class="bg-[url('../assets/meet.jpg')] bg-cover bg-center w-full mx-auto overflow-hidden"">
-      <div class="bg-black/10 rounded-sm w-full backdrop-filter backdrop-blur-md px-8 md:px-16 py-10 md:py-20 text-center">
+      <div class="bg-black/10 rounded-sm w-full backdrop-filter backdrop-blur-md px-3 md:px-16 py-10 md:py-20 text-center">
         <h2 class="text-white">Sponsors</h2>
-        <div class="flex justify-center gap-4">
-          <img src="../assets/Logos/2.png" alt="logo" class="p-3 rounded-lg !h-32 w-auto ">
-          <img src="../assets/Logos/16.png" alt="logo" class="p-3 rounded-lg !h-32 w-auto ">
-          <img src="../assets/Logos/9.png" alt="logo" class="p-3 rounded-lg !h-32 w-auto ">
+        <div class="w-[368px] overflow-hidden mx-auto flex gap-4">
+          <div class="slide">
+            <div class="flex justify-center shrink-0 gap-4 transition-transform">
+              <img src="../assets/Logos/2.png" alt="logo" class="p-3 w-28 h-auto ">
+              <img src="../assets/Logos/9.png" alt="logo" class="p-3 w-28 h-auto ">
+              <img src="../assets/Logos/16.png" alt="logo" class="p-3 w-28 h-auto ">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="flex justify-center shrink-0 gap-4 transition-transform">
+              <img src="../assets/Logos/9.png" alt="logo" class="p-3 w-28 h-auto ">
+              <img src="../assets/Logos/16.png" alt="logo" class="p-3 w-28 h-auto ">
+              <img src="../assets/Logos/2.png" alt="logo" class="p-3 w-28 h-auto ">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="flex justify-center shrink-0 gap-4 transition-transform">
+              <img src="../assets/Logos/16.png" alt="logo" class="p-3 w-28 h-auto ">
+              <img src="../assets/Logos/2.png" alt="logo" class="p-3 w-28 h-auto ">
+              <img src="../assets/Logos/9.png" alt="logo" class="p-3 w-28 h-auto ">
+            </div>
+          </div>
         </div>
+        
         <button type="button" class="sponsorBtn px-10 py-4 mx-auto mt-8 block rounded-full text-xl text-white bg-lightning-yellow-500 hover:bg-lightning-yellow-600 active:bg-lightning-yellow-700">Pour devenir Sponsor</button>
       </div>
       </div>
@@ -321,7 +340,7 @@ de nos populations.
     <div class="modal sponsor fixed top-0 left-0 hidden z-30">
       <div class="bgModal w-svw h-svh flex justify-center items-center bg-black/60">
         <form action="" class="w-11/12 max-w-2xl max-h-[95vh] overflow-y-auto p-10 bg-white rounded-lg">
-          <h2 class="title text-3xl text-center mb-4 mt-4">Devenez partenaire</h2>
+          <h3 class="title text-3xl text-center mb-4 mt-4">Devenez partenaire</h3>
           <div class="flex gap-4">
             <div class="flex flex-col mb-4 w-full">
               <label for="name" class="text-base font-medium mb-2">Nom</label>
@@ -352,27 +371,33 @@ de nos populations.
       </div>
     </div>
 
-    <section id="publications">
-      <div class="w-full mx-auto mb-12 rounded-lg overflow-hidden">
-        <div class="py-16 px-8 text-center text-white">
+    <section id="publications bg-gray-200">
+      <div class="max-w-4xl mx-auto mb-12 overflow-hidden">
+        <div class="py-16 text-center text-white">
           <h2 class="title">Publications et documents</h2>
-          <div class="flex max-md:flex-col justify-center gap-3">
-            <a href="#" download="Bulletin d'adhésion" class="flex justify-between gap-3 p-4 bg-gradient-to-tr from-jungle-green-500 to-jungle-green-700 rounded-lg w-full text-white">
-              <div class=" line-clamp-1 text mr-5">Bulletin d’adhésion</div>
-              <div class="flex justify-end">
-                <i data-lucide="arrow-down-to-line" class="w-5 font-light">download</i>
+          <div class="flex mt-6 max-md:flex-col justify-center gap-3 text-white">
+            <a href="#" download="Bulletin d'adhésion" class="w-full p-3 h-28 bg-[url('../assets/papper.png')] bg-cover">
+              <div class="flex justify-between gap-3 p-3 mt-8 bg-jungle-green-500">
+                <div class=" line-clamp-1 text mr-5">Bulletin d’adhésion</div>
+                <div class="flex justify-end">
+                  <i data-lucide="arrow-down-to-line" class="w-5 font-light">download</i>
+                </div>
               </div>
             </a>
-            <a href="#" download="Bulletin d'adhésion" class="flex justify-between gap-3 p-4 bg-gradient-to-tr from-jungle-green-500 to-jungle-green-700 rounded-lg w-full text-white">
-              <div class=" line-clamp-1 text mr-5">Plan d’actions</div>
-              <div class="flex justify-end">
-                <i data-lucide="arrow-down-to-line" class="w-5 font-light">download</i>
+            <a href="#" download="Etat des lieux et diagnostic du dispositif d’accompagnement des PME au Cameroun" class="w-full p-3 h-28 bg-[url('../assets/papper.png')] bg-cover">
+              <div class="flex justify-between gap-3 p-3 mt-8 bg-jungle-green-500">
+                <div class=" line-clamp-1 text mr-5">Etat des lieux et diagnostic du dispositif d’accompagnement des PME au Cameroun</div>
+                <div class="flex justify-end">
+                  <i data-lucide="arrow-down-to-line" class="w-5 font-light">download</i>
+                </div>
               </div>
             </a>
-            <a href="#" download="Bulletin d'adhésion" class="flex justify-between gap-3 p-4 bg-gradient-to-tr from-jungle-green-500 to-jungle-green-700 rounded-lg w-full text-white">
-              <div class=" line-clamp-1 text mr-5">Etat des lieux et diagnostic du dispositif d’accompagnement des PME au Cameroun</div>
-              <div class="flex justify-end">
-                <i data-lucide="arrow-down-to-line" class="w-5 font-light">download</i>
+            <a href="#" download="Plan d’actions" class="w-full p-3 h-28 bg-[url('../assets/papper.png')] bg-cover">
+              <div class="flex justify-between gap-3 p-3 mt-8 bg-jungle-green-500">
+                <div class=" line-clamp-1 text mr-5">Plan d’actions</div>
+                <div class="flex justify-end">
+                  <i data-lucide="arrow-down-to-line" class="w-5 font-light">download</i>
+                </div>
               </div>
             </a>
           </div>
@@ -382,6 +407,12 @@ de nos populations.
 
     <footer class="w-full p-10 mx-auto text-white bg-jungle-green-500 text-center">
       <img src="../assets/logo.jpg" alt="logo" class="w-16 block mx-auto mb-6" />
+      <div class="flex justify-center mb-2 gap-3">
+        <a href="#" class="hover:text-white" data-lucide="facebook"></a>
+        <a href="#" class="hover:text-white" data-lucide="twitter"></a>
+        <a href="#" class="hover:text-white" data-lucide="linkedin"></a>
+
+      </div>
       <p class="text-sm text-center">Copyright &copy; 2024 CJD Tous Droit Reservés</p>
     </footer>
 

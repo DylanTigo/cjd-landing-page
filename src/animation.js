@@ -1,5 +1,6 @@
 const sections = document.querySelectorAll("section")
 
+console.log(sections);
 gsap.from("section", {
   duration: 1,
   opacity: 0,

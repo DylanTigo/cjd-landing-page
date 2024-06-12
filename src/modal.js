@@ -22,11 +22,12 @@ bgSponsor.addEventListener("click", () => {
 });
 
 const menu = document.getElementById('mobile-menu');
-const bg = document.querySelector("header .bgBlack")
+const bg = document.querySelector(".header .bgBlack")
 const li = document.querySelectorAll("#mobile-menu li")
 const toggleMenu = () => {
-  menu.classList.toggle('hidden')
-  menu.classList.toggle('hidden')
+  console.log("Hello");
+  menu.classList.toggle("hidden")
+  bg.classList.toggle('hidden')
 }
 
 document.getElementById('menu-toggle').addEventListener('click', toggleMenu);
