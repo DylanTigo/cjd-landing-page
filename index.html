@@ -128,12 +128,12 @@ de nos populations.
     <section id="missions">
       <div class="w-full mx-auto px-4 overflow-hidden max-w-4xl">
         <div class="rounded-sm w-full  py-16">
-          <h2 class="title">Notre Mission</h2>
+          <h2 class="title">Nos Missions</h2>
           <div class="flex flex-col justify-center max-md:flex-col gap-3">
             <div class="flex max-sm:flex-col gap-3">
               <div class="w-full grow text-balance flex gap-6 flex-col justify-center items-end">
                 <h3 class="mini-title">Rassembler</h3>
-                <p class="md:max-w-lg text-center mx-auto block">
+                <p class="md:max-w-lg text-center">
                   Être le haut-lieu de rassemblement des jeunes dirigeants. De là naîtra la force du 
                   collectif pour favoriser une mise en réseau et former une communauté d’entraide à 
                   valeur d’aide à la décision.
@@ -149,7 +149,7 @@ de nos populations.
               </div>
               <div class="w-full grow text-balance flex gap-6 flex-col justify-center items-end">
                 <h3 class="mini-title">Former</h3>
-                <p class="md:max-w-lg text-center mx-auto block">
+                <p class="md:max-w-lg text-center">
                   Assurer la formation des membres et faciliter la transmission des bonnes pratiques pour 
 devenir plus performant et rendre son entreprise plus performante dans une 
 dynamique responsable, viable et durable.
@@ -159,7 +159,7 @@ dynamique responsable, viable et durable.
             <div class="flex max-sm:flex-col gap-3">
               <div class="w-full grow text-balance flex gap-6 flex-col justify-center items-end">
                 <h3 class="mini-title">Influencer</h3>
-                <p class="md:max-w-lg text-center mx-auto block">
+                <p class="md:max-w-lg text-center">
                   Assurer la promotion et la défense du point de vue et des intérêts des Jeunes 
 Dirigeants sur des problématiques touchant au fonctionnement de leurs entreprises et 
 du secteur privé. 
@@ -284,7 +284,7 @@ du secteur privé.
       <div class="bgModal w-svw h-svh flex justify-center items-center bg-black/60">
         <form action="" class="w-11/12 max-w-2xl max-h-[95vh] overflow-y-auto p-10 bg-white rounded-lg">
           <h3 class="title font-bold text-3xl text-center mb-4 mt-4">Rejoignez nous</h3>
-          <div class="flex gap-4">
+          <div class="flex max-md:flex-col gap-x-4">
             <div class="flex flex-col mb-4 w-full">
               <label for="name" class="text-base font-medium mb-2">Nom</label>
               <input type="text" id="name" class="py-2 px-3 border border-gray-300 rounded-lg">
@@ -299,7 +299,6 @@ du secteur privé.
             <input type="date" id="dateNais" class="py-2 px-3 border border-gray-300 rounded-lg">
           </div>
           <div class="flex gap-4">
-
             <div class="flex flex-col mb-4 w-full">
               <label for="email" class="text-base font-medium">Email</label>
             <input type="email" id="email" class="py-2 px-3 border border-gray-300 rounded-lg">
@@ -321,10 +320,10 @@ du secteur privé.
     </div>
 
     <section id="sponsors">
-      <div class="bg-gray-200 w-full px-3 md:px-16 py-10 md:py-20 text-center">
+      <div class="bg-gray-200 w-full px-3 py-10 md:py-20 text-center">
         <h2 class="title">Sponsors</h2>
-        <div class="overflow-hidden max-w-[640px] mx-auto">
-          <div class="flex animate-sponsorsSlider">
+        <div class="overflow-hidden max-w-[700px] mx-auto">
+          <div class="flex gap-5 animate-sponsorsSlider">
             <div class="p-3 w-40 flex shrink-0 items-center">
               <img src="/assets/Logos/2.png" alt="logo" class="ogject-cover">
             </div>
@@ -396,67 +395,150 @@ du secteur privé.
     </section>
 
     <section id="actualite" class="px-3 py-10 md:py-20">
-      <h2 class="title">Actualité</h2>
-      <ul class="gallery">
-        <li class="item">
-          <img src="/assets/Gallery/1.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/2.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/3.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/4.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/5.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/6.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/8.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/9.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/10.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/11.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/12.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/7.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/13.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/14.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/15.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/16.jpeg" alt="">
-        </li>
-        <li class="item">
-          <img src="/assets/Gallery/17.jpeg" alt="">
-        </li>
-      </ul>
+      <h2 class="title">Actualités</h2>
+      <div class=" overflow-hidden flex max-w-5xl mx-auto">
+        <ul class="min-w-full gallery animate-slideGallery">
+          <li class="item">
+            <img src="/assets/Gallery/1.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/2.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/3.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/4.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/5.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/6.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/8.jpeg" alt="">
+          </li>
+        </ul>
+        <ul class="min-w-full gallery animate-slideGallery ml-3">
+          <li class="item">
+            <img src="/assets/Gallery/1.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/2.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/3.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/4.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/5.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/6.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/8.jpeg" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class=" overflow-hidden flex max-w-5xl mt-4 mx-auto">
+        <ul class="min-w-full gallery animate-slideGallery">
+          <li class="item">
+            <img src="/assets/Gallery/9.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/10.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/11.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/12.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/7.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/13.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/14.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/15.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/16.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/17.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/9.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/10.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/11.jpeg" alt="">
+          </li>
+        </ul>
+        <ul class="min-w-full gallery animate-slideGallery ml-3">
+          <li class="item">
+            <img src="/assets/Gallery/9.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/10.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/11.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/12.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/7.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/13.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/14.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/15.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/16.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/17.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/9.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/10.jpeg" alt="">
+          </li>
+          <li class="item">
+            <img src="/assets/Gallery/11.jpeg" alt="">
+          </li>
+        </ul>
+      </div>
     </section>
+
+    <div class="overley">
+      
+    </div>
 
     <section id="publications" class="bg-gray-200">
       <div class="max-w-4xl mx-auto overflow-hidden">
-        <div class="py-16 text-center text-white">
+        <div class="py-16 text-center">
           <h2 class="title">Publications et documents</h2>
-          <div class="flex mt-6 max-md:flex-col justify-center gap-3 text-white">
+          <div class="flex mt-6 max-md:flex-col text-white  justify-center gap-3 text-white">
             <a href="#" download="Bulletin d'adhésion" class="w-full mx-auto max-w-sm rounded p-3 h-28 bg-[url('/assets/papper.png')] bg-cover">
               <div class="flex justify-between gap-3 p-3 mt-8 rounded bg-jungle-green-500">
                 <div class=" line-clamp-1 text mr-5">Bulletin d’adhésion</div>
@@ -486,9 +568,9 @@ du secteur privé.
       </div>
     </section>
 
-    <footer class="w-full p-10 mx-auto text-white text-sm bg-jungle-green-500 text-center">
+    <footer class="w-full p-10 mx-auto border-spacing-y-4 text-white text-sm bg-jungle-green-500 text-center">
       <img src="/assets/logo.jpg" alt="logo" class="w-16 block mx-auto mb-6" />
-      <div class="flex items-center justify-center gap-4">
+      <div class="flex items-center justify-center gap-5">
         <div class="flex gap-1 items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <p class="">+237 657385945</p>
@@ -497,19 +579,19 @@ du secteur privé.
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           <p class="">contact@cjd-asso.com</p>
         </div>
-      <a href="#" class="text-xs">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-      </a>
-      <a href="#" class="text-xs">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-      </a>
-      <a href="#" class="text-xs">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-      </a>
       </div>
-      <!-- <div class="flex justify-center mb-2 gap-3">
-      </div> -->
-      <p class="text-xs text-center">Copyright &copy; 2024 CJD Tous Droit Reservés</p>
+      <div class="flex justify-center my-2 gap-3">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+      </div>
+      <p class="text-xs mt-2 text-center">Copyright &copy; 2024 CJD Tous Droit Reservés</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>

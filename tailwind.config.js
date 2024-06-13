@@ -52,7 +52,8 @@ module.exports = {
       },
       animation: {
         'slide': "slide 40s infinite linear",
-        'sponsorsSlider': "sponsorSlide 12s infinite ease-in-out"
+        'sponsorsSlider': "sponsorSlide 12s infinite ease-in-out",
+        'slideGallery': "slide 60s infinite linear",
       },
       keyframes: {
         slide: {
@@ -61,10 +62,10 @@ module.exports = {
         },
         sponsorSlide: {
           "0%, 20%": { transform: "translateX(0)" },
-          "25%, 45%": { transform: "translateX(-10rem)" },
-          "50%, 70%": { transform: "translateX(-20rem)" },
-          "75%, 95%": { transform: "translateX(-30rem)" },
-          "100%": { transform: "translateX(-40rem)" },
+          "25%, 45%": { transform: "translateX(-11.25rem)" },
+          "50%, 70%": { transform: "translateX(-22.5rem)" },
+          "75%, 95%": { transform: "translateX(-33.75rem)" },
+          "100%": { transform: "translateX(-45rem)" },
         }
       },
     },
