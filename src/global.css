@@ -28,7 +28,7 @@
     @apply lg:text-5xl md:text-4xl text-3xl font-bold mb-7 w-fit mx-auto relative z-10;
   }
   .title::after{
-    @apply bg-jungle-green-500/40;
+    @apply bg-lightning-yellow-500/50;
   }
   .title::after, .mini-title::after{
     content: "";
