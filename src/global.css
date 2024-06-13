@@ -17,7 +17,7 @@
     @apply relative lg:text-5xl md:text-4xl text-3xl font-bold mb-7
   }
   h2.title{
-    @apply text-center text-white w-fit mx-auto
+    @apply text-white w-fit mx-auto relative z-10
   }
   h2.title::after{
     content: "";
@@ -89,23 +89,23 @@
   }
 
   .profile-card {
-    @apply min-w-56 w-full sm:max-w-60 max-w-96 rounded-lg bg-white flex flex-col items-center justify-between text-center transition-all duration-300 ease-in-out text-black shadow-lg cursor-pointer;
+    @apply min-w-56 grow p-2 rounded-md max-w-[80%] sm:max-w-60 bg-white flex flex-col items-center justify-between text-center transition-all duration-300 ease-in-out text-black shadow-lg cursor-pointer;
   }
   .profile-card img {
     @apply w-full aspect-square rounded object-cover mb-2;
   }
   .profile-card .text {
-    @apply flex p-2 flex-col items-center justify-center text-center text-black;
+    @apply flex flex-col justify-start text-black grow;
   }
   .profile-card h3 {
-    @apply text-2xl;
+    @apply text-base;
   }
   .profile-card p {
-    @apply text-2xl mb-4 font-bold;
+    @apply text-xl mb-4 font-bold;
   }
 
   .btn {
-    @apply size-12 rounded-full flex justify-center items-center bg-jungle-green-300;
+    @apply w-fit px-10 py-4 mt-8 block rounded-lg text-xl text-black font-bold bg-lightning-yellow-500 hover:bg-lightning-yellow-600 active:bg-lightning-yellow-700;
   }
 
   #joinUs .logo{

@@ -87,20 +87,3 @@ document.addEventListener("DOMContentLoaded", function () {
     nextBtn.disabled = currentTranslate <= -(sliderTrack.offsetWidth);
   }
 });
-
-document.addEventListener('DOMContentLoaded', (event) => {
-  let slideIndex = 0;
-  const slides = document.querySelectorAll('#sponsors .slide');
-  
-  const showSlides = () => {
-    slides.forEach((slide, index) => {
-      slide.style.display = 'none';
-    });
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = 'block';
-    setTimeout(showSlides, 3000); // Change image every 5 seconds
-  }
-
-  showSlides();
-});
