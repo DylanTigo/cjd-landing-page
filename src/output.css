@@ -653,13 +653,19 @@ nav li {
   z-index: 10;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1.75rem;
+  margin-bottom: 0.75rem;
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .mini-title {
+    margin-bottom: 1.75rem;
+  }
 }
 
 .mini-title::after {
@@ -1029,6 +1035,10 @@ nav li {
   margin-bottom: 0.5rem;
 }
 
+.\!mb-0 {
+  margin-bottom: 0px !important;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1071,10 +1081,6 @@ nav li {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.\!mb-0 {
-  margin-bottom: 0px !important;
 }
 
 .line-clamp-1 {
@@ -1656,6 +1662,10 @@ nav li {
 
   .md\:max-w-md {
     max-width: 28rem;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:p-16 {

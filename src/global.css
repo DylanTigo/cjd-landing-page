@@ -42,7 +42,7 @@
   }
 
   .mini-title{
-    @apply relative mb-7 w-fit z-10 text-center mx-auto text-2xl font-bold
+    @apply relative md:mb-7 mb-3 w-fit z-10 text-center mx-auto text-2xl font-bold
   }
   .mini-title::after{
     @apply bg-lightning-yellow-500/50
