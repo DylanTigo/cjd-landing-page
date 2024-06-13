@@ -52,7 +52,7 @@ module.exports = {
       },
       animation: {
         'slide': "slide 40s infinite linear",
-        'sponsorsSlider': "sponsorSlide 10s infinite ease-in-out"
+        'sponsorsSlider': "sponsorSlide 12s infinite ease-in-out"
       },
       keyframes: {
         slide: {

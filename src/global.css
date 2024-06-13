@@ -4,32 +4,18 @@
 
 /* custom.css */
 @layer base {
-  html{
-    @apply scroll-smooth overflow-x-hidden
+  html {
+    @apply scroll-smooth overflow-x-hidden;
   }
   body {
     @apply bg-white overflow-x-hidden;
   }
   h1 {
     @apply lg:text-5xl md:text-4xl text-3xl mx-auto font-black text-pretty text-center;
-  } 
-  h2{
-    @apply relative lg:text-5xl md:text-4xl text-3xl font-bold mb-7
   }
-  h2.title{
-    @apply text-white w-fit mx-auto relative z-10
-  }
-  h2.title::after{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 896px;
-    width: 110%;
-    height: 110%;
-    z-index: -1;
-    @apply bg-jungle-green-600
+
+  nav li {
+    @apply px-2 py-1;
   }
 }
 
@@ -37,8 +23,29 @@
   .header {
     @apply flex items-center justify-between py-2 px-36;
   }
-  nav li{
-    @apply px-2 py-1
+
+  .title {
+    @apply lg:text-5xl md:text-4xl text-3xl font-bold mb-7 w-fit mx-auto relative z-10;
+  }
+  .title::after{
+    @apply bg-jungle-green-500/40;
+  }
+  .title::after, .mini-title::after{
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    max-width: 896px;
+    width: 100%;
+    height: 25%;
+    z-index: -1;
+  }
+
+  .mini-title{
+    @apply relative mb-7 w-fit z-10 text-center mx-auto text-2xl font-bold
+  }
+  .mini-title::after{
+    @apply bg-lightning-yellow-500/80
   }
 
   .card {
@@ -47,33 +54,33 @@
   .card .textContainer {
     @apply p-3 w-full bg-jungle-green-800/60 backdrop-blur-sm backdrop-filter rounded-lg;
   }
-  .card .textContainer p{
-    @apply line-clamp-3
+  .card .textContainer p {
+    @apply line-clamp-3;
   }
 
-  .sliderContainer{
-    @apply w-full relative h-[75vh] mx-auto flex overflow-hidden
+  .sliderContainer {
+    @apply w-full relative h-[75vh] mx-auto flex overflow-hidden;
   }
-  .slideItem{
-    @apply px-8 md:px-16 absolute top-0 left-0 text-white grow content-center w-full h-full opacity-0 transition duration-1000
+  .slideItem {
+    @apply px-8 md:px-16 absolute top-0 left-0 text-white grow content-center w-full h-full opacity-0 transition duration-1000;
   }
-  .slideItem.active{
-    @apply opacity-100
+  .slideItem.active {
+    @apply opacity-100;
   }
-  .slideItem img{
-    @apply absolute top-0 left-0 w-full h-full object-center object-cover -z-20 filter brightness-50
+  .slideItem img {
+    @apply absolute top-0 left-0 w-full h-full object-center object-cover -z-20 filter brightness-50;
   }
-  .slideItem h2{
-    @apply text-white
+  .slideItem h2 {
+    @apply text-white;
   }
-  .slideItem p{
-    @apply text-lg max-w-lg mt-7
+  .slideItem p {
+    @apply text-lg max-w-lg mt-7;
   }
-  .sliderBtnContainer{
-    @apply flex justify-end gap-3 self-end
+  .sliderBtnContainer {
+    @apply flex justify-end gap-3 self-end;
   }
-  .sliderBtn{
-    @apply size-10 md:size-12 rounded-full flex justify-center items-center text-white bg-jungle-green-500
+  .sliderBtn {
+    @apply size-10 md:size-12 rounded-full flex justify-center items-center text-white bg-jungle-green-500;
   }
   .dot-container {
     @apply flex gap-4;
@@ -84,8 +91,8 @@
   .dot-inner {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-2 md:size-3 rounded-full;
   }
-  .dot-inner.active{
-    @apply bg-jungle-green-300
+  .dot-inner.active {
+    @apply bg-jungle-green-300;
   }
 
   .profile-card {
@@ -105,13 +112,20 @@
   }
 
   .btn {
-    @apply w-fit px-10 py-4 mt-8 block rounded-lg text-xl text-black font-bold bg-lightning-yellow-500 hover:bg-lightning-yellow-600 active:bg-lightning-yellow-700;
+    @apply w-fit px-10 py-4 mt-8 block rounded-lg text-xl text-black font-bold bg-lightning-yellow-500 hover:bg-lightning-yellow-400 active:bg-lightning-yellow-700;
   }
 
-  #joinUs .logo{
-    @apply p-2 !h-24 md:!h-32 w-auto
+  #joinUs .logo {
+    @apply p-2 !h-24 md:!h-32 w-auto;
   }
 
+  .gallery {
+    @apply flex flex-wrap gap-3 justify-center max-w-5xl max-h-[90lvh] overflow-y-scroll mx-auto;
+  }
+  .gallery .item {
+    @apply h-52 md:h-64 list-none grow p-[2px];
+  }
+  .gallery img {
+    @apply w-full h-full object-cover object-center rounded;
+  }
 }
-
-

@@ -1,10 +1,10 @@
-const joinUsBtn = document.querySelector(".joinUsBtn");
+const joinUsBtns = document.querySelectorAll(".joinUsBtn");
 const joinUsModal = document.querySelector(".joinUs");
 const bgModal = document.querySelector(".bgModal");
 
-joinUsBtn.addEventListener("click", () => {
+joinUsBtns.forEach(btn => btn.addEventListener("click", () => {
   joinUsModal.classList.toggle("hidden");
-});
+}))
 bgModal.addEventListener("click", () => {
   joinUsModal.classList.add("hidden");
 });
