@@ -24,8 +24,11 @@
     @apply flex items-center justify-between py-2 px-36;
   }
 
+  .hero-title, .title{
+    @apply text-5xl font-bold mb-7
+  }
   .title {
-    @apply lg:text-5xl md:text-4xl text-3xl font-bold mb-7 w-fit mx-auto relative z-10;
+    @apply w-fit mx-auto relative z-10;
   }
   .title::after{
     @apply bg-lightning-yellow-500/50;
@@ -42,7 +45,7 @@
   }
 
   .mini-title{
-    @apply relative md:mb-7 mb-3 w-fit z-10 text-center mx-auto text-2xl font-bold
+    @apply relative md:mb-7 mb-3 w-fit z-10 text-center mx-auto text-4xl font-bold
   }
   .mini-title::after{
     @apply bg-lightning-yellow-500/50
@@ -68,7 +71,7 @@
     @apply opacity-100;
   }
   .slideItem img {
-    @apply absolute top-0 left-0 w-full h-full object-center object-cover -z-20 filter brightness-50;
+    @apply absolute top-0 left-0 w-full h-full object-center object-cover md:object-left -z-20 filter brightness-50;
   }
   .slideItem h2 {
     @apply text-white;
