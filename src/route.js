@@ -1,4 +1,5 @@
 // router.js
+
 function navigateTo(url) {
   history.pushState(null, null, url);
   handleLocation();
@@ -6,17 +7,31 @@ function navigateTo(url) {
 
 function handleLocation() {
   const path = window.location.pathname;
+  let anchor = window.location.hash;
+
+  if(path === "/index.html"){
+    window.location.replace("/");
+  }
+
   const routes = {
-      "/": "/index.html",
-      "/publications": "/publications.html"
+    "/": "/src/main.html",
+    "/publications": "/src/publications.html",
   };
 
   const route = routes[path] || routes["/"];
   fetch(route)
-      .then((data) => data.text())
-      .then((html) => {
-          document.getElementById("main-content").innerHTML = html;
-      });
+    .then((data) => data.text())
+    .then((html) => {
+      document.getElementById("main-content").innerHTML = html;
+
+      if (anchor) {
+        const element = document.querySelector(anchor);
+        if (element) {
+            element.scrollIntoView();
+        }
+    }
+
+    });
 }
 
 window.onpopstate = handleLocation;
