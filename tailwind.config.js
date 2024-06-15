@@ -3,8 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     fontFamily: {
-      sans: ["Levenim MT", "sans-serif"],
-      century: ["Century", "sans-serif"],
+      sans: ["Levenim", "sans-serif"],
+      century: ["Gothic", "sans-serif"],
     },
     extend: {
       colors: {

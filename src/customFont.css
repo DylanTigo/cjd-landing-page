@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Gothic';
+  src: url('./Fonts/GOTHIC.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gothic';
+  src: url('./Fonts/GOTHICB.TTF') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gothic';
+  src: url('./Fonts/GOTHICB0.TTF') format('truetype');
+  font-weight: normal;
+  font-style: black;
+}
+
+@font-face {
+  font-family: 'Levenim';
+  src: url('./Fonts/Levenim.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,3 +1,4 @@
+@import url("./customFont.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +6,7 @@
 /* custom.css */
 @layer base {
   html {
-    @apply scroll-smooth overflow-x-hidden;
+    @apply scroll-smooth overflow-x-hidden font-sans;
   }
   body {
     @apply bg-white overflow-x-hidden;
@@ -25,7 +26,7 @@
   }
 
   .hero-title, .title{
-    @apply lg:text-5xl text-4xl font-bold mb-7
+    @apply lg:text-5xl text-4xl font-bold mb-7 font-century
   }
   .title {
     @apply w-fit mx-auto relative z-10;
@@ -45,7 +46,7 @@
   }
 
   .mini-title{
-    @apply relative md:mb-7 mb-3 w-fit z-10 text-center mx-auto text-3xl lg:text-4xl font-bold
+    @apply relative md:mb-7 mb-3 w-fit z-10 text-center mx-auto text-3xl lg:text-4xl font-bold font-century
   }
   .mini-title::after{
     @apply bg-lightning-yellow-500/50
