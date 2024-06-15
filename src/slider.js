@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", setTimeout(() => {
   let currentSlideIndex = 0;
   const slides = document.querySelectorAll("#hero .slideItem");
   const dots = document.querySelectorAll(".dot-inner");
@@ -57,33 +57,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showSlide(currentSlideIndex);
   startSlideShow();
-
-  //slider2
-  const prevBtn = document.querySelector(".prevBtn");
-  const nextBtn = document.querySelector(".nextBtn");
-  const sliderTrack = document.querySelector(".slider-track");
-  const card= document.querySelector(".profile-card");
-  const sliderWidth = card.offsetWidth + 40;
-  let currentTranslate = 0;
-
-  prevBtn.addEventListener("click", function () {
-    if (currentTranslate !== 0) {
-      currentTranslate += sliderWidth;
-      sliderTrack.style.transform = `translateX(${currentTranslate}px)`;
-    }
-    updateButtons();
-  });
-
-  nextBtn.addEventListener("click", function () {
-    if (currentTranslate > -(sliderTrack.scrollWidth - sliderWidth)) {
-      currentTranslate -= sliderWidth;
-      sliderTrack.style.transform = `translateX(${currentTranslate}px)`;
-    }
-    updateButtons();
-  });
-
-  function updateButtons() {
-    prevBtn.disabled = currentTranslate === 0;
-    nextBtn.disabled = currentTranslate <= -(sliderTrack.offsetWidth);
-  }
-});
+}, 1000));
