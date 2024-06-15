@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        levenim: ["Levenim", "sans-serif"],
-        gothic: ["Gothic", "sans-serif"],
+        "levenim": ["Levenim", "sans-serif"],
+        "gothic": ["Gothic", "sans-serif"],
       },
       colors: {
         "jungle-green": {

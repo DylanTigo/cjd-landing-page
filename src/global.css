@@ -10,7 +10,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-white overflow-x-hidden;
+    @apply bg-white overflow-x-hidden font-levenim;
   }
   h1 {
     @apply lg:text-5xl md:text-4xl text-3xl mx-auto font-black text-pretty text-center;
@@ -27,7 +27,7 @@
   }
 
   .hero-title, .title{
-    @apply lg:text-5xl text-4xl font-bold mb-7 font-century
+    @apply lg:text-5xl text-4xl font-bold mb-7 font-gothic
   }
   .title {
     @apply w-fit mx-auto relative z-10;
@@ -47,7 +47,7 @@
   }
 
   .mini-title{
-    @apply relative md:mb-7 mb-3 w-fit z-10 text-center mx-auto text-3xl lg:text-4xl font-bold font-century
+    @apply relative md:mb-7 mb-3 w-fit z-10 text-center mx-auto text-3xl lg:text-4xl font-bold font-gothic
   }
   .mini-title::after{
     @apply bg-lightning-yellow-500/50
