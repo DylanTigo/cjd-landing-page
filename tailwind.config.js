@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
-    fontFamily: {
-      sans: ["Levenim", "sans-serif"],
-      century: ["Gothic", "sans-serif"],
-    },
     extend: {
+      fontFamily: {
+        levenim: ["Levenim", "sans-serif"],
+        gothic: ["Gothic", "sans-serif"],
+      },
       colors: {
         "jungle-green": {
           50: "#edfcf6",
@@ -51,9 +51,9 @@ module.exports = {
         white: "#f5f5f6",
       },
       animation: {
-        'slide': "slide 40s infinite linear",
-        'sponsorsSlider': "sponsorSlide 12s infinite ease-in-out",
-        'slideGallery': "slide 60s infinite linear",
+        slide: "slide 40s infinite linear",
+        sponsorsSlider: "sponsorSlide 12s infinite ease-in-out",
+        slideGallery: "slide 60s infinite linear",
       },
       keyframes: {
         slide: {
@@ -66,7 +66,7 @@ module.exports = {
           "50%, 70%": { transform: "translateX(-22.5rem)" },
           "75%, 95%": { transform: "translateX(-33.75rem)" },
           "100%": { transform: "translateX(-45rem)" },
-        }
+        },
       },
     },
   },

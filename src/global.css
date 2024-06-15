@@ -6,7 +6,8 @@
 /* custom.css */
 @layer base {
   html {
-    @apply scroll-smooth overflow-x-hidden font-sans;
+    font-family: 'Levenim', sans-serif;
+    @apply scroll-smooth;
   }
   body {
     @apply bg-white overflow-x-hidden;
