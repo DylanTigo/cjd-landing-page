@@ -1195,12 +1195,20 @@ nav li {
   left: 0px;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
 .right-0 {
   right: 0px;
 }
 
 .top-0 {
   top: 0px;
+}
+
+.top-1\/2 {
+  top: 50%;
 }
 
 .isolate {
@@ -1456,12 +1464,12 @@ nav li {
   height: 1.5rem;
 }
 
-.h-\[50lvh\] {
-  height: 50lvh;
+.h-\[40lvh\] {
+  height: 40lvh;
 }
 
-.h-\[70lvh\] {
-  height: 70lvh;
+.h-\[60lvh\] {
+  height: 60lvh;
 }
 
 .h-full {
@@ -1474,10 +1482,6 @@ nav li {
 
 .h-svh {
   height: 100svh;
-}
-
-.h-\[60lvh\] {
-  height: 60lvh;
 }
 
 .max-h-\[95vh\] {
@@ -1530,6 +1534,10 @@ nav li {
 
 .w-full {
   width: 100%;
+}
+
+.w-lvw {
+  width: 100lvw;
 }
 
 .w-svw {
@@ -1626,6 +1634,16 @@ nav li {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform {

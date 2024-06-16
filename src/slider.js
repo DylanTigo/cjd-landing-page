@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", setTimeout(() => {
+function initializeSlider() {
   let currentSlideIndex = 0;
   const slides = document.querySelectorAll("#hero .slideItem");
   const dots = document.querySelectorAll(".dot-inner");
@@ -30,21 +30,17 @@ document.addEventListener("DOMContentLoaded", setTimeout(() => {
     clearInterval(slideInterval);
   }
 
-  document
-    .querySelector(".sliderBtn:nth-child(1)")
-    .addEventListener("click", () => {
-      prevSlide();
-      stopSlideShow();
-      startSlideShow();
-    });
+  document.querySelector(".sliderBtn:nth-child(1)").addEventListener("click", () => {
+    prevSlide();
+    stopSlideShow();
+    startSlideShow();
+  });
 
-  document
-    .querySelector(".sliderBtn:nth-child(2)")
-    .addEventListener("click", () => {
-      nextSlide();
-      stopSlideShow();
-      startSlideShow();
-    });
+  document.querySelector(".sliderBtn:nth-child(2)").addEventListener("click", () => {
+    nextSlide();
+    stopSlideShow();
+    startSlideShow();
+  });
 
   dots.forEach((dot, index) => {
     dot.addEventListener("click", () => {
@@ -57,4 +53,8 @@ document.addEventListener("DOMContentLoaded", setTimeout(() => {
 
   showSlide(currentSlideIndex);
   startSlideShow();
-}, 1000));
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initializeSlider();
+});

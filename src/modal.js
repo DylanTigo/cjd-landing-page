@@ -17,9 +17,11 @@ document.addEventListener("DOMContentLoaded", setTimeout(() => {
   const bgSponsor = document.querySelector(".sponsor .bgModal");
 
   sponsorBtn.addEventListener("click", () => {
+    console.log("Click");
     sponsorModal.classList.toggle("hidden");
   });
   bgSponsor.addEventListener("click", () => {
+    console.log("Click Bg");
     sponsorModal.classList.add("hidden");
   });
 
