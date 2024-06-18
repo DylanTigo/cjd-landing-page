@@ -1514,6 +1514,10 @@ nav li {
   height: 100svh;
 }
 
+.h-\[40lvh\] {
+  height: 40lvh;
+}
+
 .max-h-\[95vh\] {
   max-height: 95vh;
 }
