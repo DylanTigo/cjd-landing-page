@@ -159,7 +159,6 @@ function initializeAnimations() {
       stagger: .1,
       scrollTrigger: {
         trigger: "#sponsors",
-        markers: "true",
         start: "top center",
         toggleActions: "play none none reset",
       },
