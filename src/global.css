@@ -22,6 +22,9 @@
 }
 
 @layer components {
+  .loader{
+    @apply  w-lvw h-lvh fixed top-0 left-0 bg-jungle-green-500 z-50 flex justify-center items-center
+  }
   .header {
     @apply flex items-center justify-between py-2 px-36;
   }
@@ -91,7 +94,7 @@
     @apply flex gap-4;
   }
   .dot {
-    @apply size-4 md:size-5 relative rounded-full border-2 border-jungle-green-300;
+    @apply size-4 md:size-5 relative rounded-full border-2 border-jungle-green-300 scale-0;
   }
   .dot-inner {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-2 md:size-3 rounded-full;
@@ -101,7 +104,7 @@
   }
 
   .profile-card {
-    @apply min-w-56 grow p-2 rounded-md max-w-[80%] sm:max-w-60 bg-white flex flex-col items-center justify-between text-center transition-all duration-300 ease-in-out text-black shadow-lg cursor-pointer;
+    @apply min-w-56 grow p-2 rounded-md max-w-[80%] sm:max-w-60 bg-white flex flex-col items-center justify-between text-center transition-all duration-300 ease-in-out text-black shadow-lg cursor-pointer translate-y-24 opacity-0 invisible;
   }
   .profile-card img {
     @apply w-full aspect-square rounded object-cover mb-2;
@@ -132,5 +135,20 @@
   }
   .gallery img {
     @apply w-full h-full object-cover object-center rounded;
+  }
+}
+
+@layer utilities{
+  .autoAlpha{
+    @apply invisible opacity-0
+  }
+  .alpha{
+    @apply visible opacity-100
+  }
+  .textContainer{
+    @apply opacity-0 invisible translate-y-28
+  }
+  .imgContainer{
+    @apply opacity-0 invisible scale-0
   }
 }

@@ -1,11 +1,11 @@
 <div id="accueil" class="transition">
-  <section id="hero">
+  <section id="hero" class="autoAlpha -translate-y-40">
     <div class="sliderContainer">
       <div class="size-full flex justify-between flex-col p-16 relative overflow-hidden">
         <div class="slideItem active">
           <img src="/assets/image/conquerant.jpg" alt="">
-          <h2 class="hero-title">Conquérant(e)</h2>
-          <p>
+          <h2 class="hero-title autoAplha">Conquérant(e)</h2>
+          <p class="autoAplha">
             Faire de la marque « Cameroon » un label de qualité pour conquérir
             le monde.
           </p>
@@ -34,16 +34,16 @@ de nos populations.
       </div>
       <div class="absolute w-full h-full flex justify-between p-8 md:p-16">
       <div class="dot-container">
-            <div class="dot">
+            <div class="dot scale-0">
               <div class="dot-inner active"></div>
             </div>
-            <div class="dot">
+            <div class="dot scale-0">
               <div class="dot-inner"></div>
             </div>
-            <div class="dot">
+            <div class="dot scale-0">
               <div class="dot-inner"></div>
             </div>
-            <div class="dot">
+            <div class="dot scale-0">
               <div class="dot-inner"></div>
             </div>
       </div>
@@ -62,14 +62,14 @@ de nos populations.
   <section id="vision" class="bg-gray-200">
     <div class="w-full mx-auto">
       <div class="flex max-md:flex-col">
-        <div class="w-full h-[60lvh] grow text-balance flex flex-col justify-center items-end px-4 py-10 md:py-20">
+        <div class="textContainer w-full h-[60lvh] grow text-balance flex flex-col justify-center items-end px-4 py-10 md:py-20">
           <h2 class="title">Notre Vision</h2>
           <p class="text-black text-center md:max-w-md mx-auto px-4 max-md:text-center">Le CJD s’affirme comme une plateforme qui outille, inspire et connecte avec pour 
 objectif de capitaliser sur le potentiel de nos talents, éviter la fuite des cerveaux et
 impulser le renouveau entrepreneurial pour faire gagner le Cameroun.
           </p>
         </div>
-        <div class="w-full grow">
+        <div class="imgContainer w-full grow">
           <img src="/assets/image/Vision.jpeg" class="w-full h-full object-right-top object-cover" alt="image correspondante">
         </div>
       </div>
@@ -82,7 +82,7 @@ impulser le renouveau entrepreneurial pour faire gagner le Cameroun.
         <h2 class="title">Nos Missions</h2>
         <div class="flex flex-col justify-center max-md:flex-col gap-3">
           <div class="flex gap-3 max-md:flex-col">
-            <div class="w-full grow text-balance max-md:p-4 flex md:gap-6 h-[40lvh] md:h-auto flex-col justify-center items-end">
+            <div class="textContainer w-full grow text-balance max-md:p-4 flex md:gap-6 h-[40lvh] md:h-auto flex-col justify-center items-end">
               <h3 class="mini-title">Rassembler</h3>
               <p class="md:max-w-lg text-center">
                 Être le haut-lieu de rassemblement des jeunes dirigeants. De là naîtra la force du 
@@ -90,15 +90,15 @@ impulser le renouveau entrepreneurial pour faire gagner le Cameroun.
                 valeur d’aide à la décision.
               </p>
             </div>
-            <div class="md:w-[80%] mx-auto sm:w-full grow">
+            <div class="imgContainer md:w-[80%] mx-auto sm:w-full grow">
               <img src="/assets/image/Rassemble.png" class="bg-gray-200 aspect-square object-cover block mx-auto" alt="image correspondante">
             </div>
           </div>
           <div class="flex gap-3 max-md:flex-col-reverse">
-            <div class="md:w-[80%] mx-auto sm:w-full grow">
+            <div class="imgContainer md:w-[80%] mx-auto sm:w-full grow">
               <img src="/assets/image/Former.jpg" class="bg-gray-200 aspect-square object-cover block mx-auto" alt="image correspondante">
             </div>
-            <div class="w-full grow text-balance max-md:p-4 flex md:gap-6 h-[40lvh] md:h-auto flex-col justify-center items-end">
+            <div class="textContainer w-full grow text-balance max-md:p-4 flex md:gap-6 h-[40lvh] md:h-auto flex-col justify-center items-end">
               <h3 class="mini-title">Former</h3>
               <p class="md:max-w-lg text-center">
                 Assurer la formation des membres et faciliter la transmission des bonnes pratiques pour 
@@ -108,7 +108,7 @@ dynamique responsable, viable et durable.
             </div>
           </div>
           <div class="flex gap-3 max-md:flex-col">
-            <div class="w-full grow text-balance max-md:p-4 flex md:gap-6 h-[40lvh] md:h-auto flex-col justify-center items-end">
+            <div class="textContainer w-full grow text-balance max-md:p-4 flex md:gap-6 h-[40lvh] md:h-auto flex-col justify-center items-end">
               <h3 class="mini-title">Influencer</h3>
               <p class="md:max-w-lg text-center">
                 Assurer la promotion et la défense du point de vue et des intérêts des Jeunes 
@@ -116,7 +116,7 @@ Dirigeants sur des problématiques touchant au fonctionnement de leurs entrepris
 du secteur privé. 
               </p>
             </div>
-            <div class="md:w-[80%] mx-auto sm:w-full grow">
+            <div class="imgContainer md:w-[80%] mx-auto sm:w-full grow">
               <img src="/assets/image/influencer.png" class="bg-gray-200 aspect-square object-cover block mx-auto" alt="image correspondante">
             </div>
           </div>
@@ -179,7 +179,7 @@ du secteur privé.
         <p class="text-center block text-balance mx-4 mb-6">
           Nous accueillons toute personne désireuse d’atteindre son plein potentiel dans la gestion de ses fonctions managériales en se formant tout en participant à la formation de la communauté. 
         </p>
-        <p class=" mt-5 mb-2 text-lg font-bold text-center">Quelques entreprises dirigées par nos membres : </p>
+        <p class="font-medium">Quelques entreprises dirigées par nos membres : </p>
         <div class="logoSlider w-full flex overflow-hidden">
           <div class="min-w-full flex gap-10 shrink-0 animate-slide">
             <img src="/assets/Logos/1.png" alt="logo" class="logo">
@@ -273,23 +273,23 @@ du secteur privé.
   <section id="sponsors">
     <div class="bg-gray-200 w-full px-3 py-10 md:py-20 text-center">
       <h2 class="title">Sponsors</h2>
-      <div class="max-w-3xl grid grid-cols-2 sm:grid-cols-3 justify-center mx-auto gap-x-10 xl:flex-row px-4 !sm:px-0">
-        <div class="flex items-center justify-center aspect-square">
+      <ul class="max-w-3xl grid grid-cols-2 sm:grid-cols-3 justify-center mx-auto gap-x-10 xl:flex-row px-4 !sm:px-0">
+        <li class="flex items-center justify-center aspect-square scale-0">
           <img src="/assets/Logos/2.png" alt="logo" class="mx-auto max-w-[60%]">
-        </div>
-        <div class="flex items-center justify-center aspect-square">
+        </li>
+        <li class="flex items-center justify-center aspect-square scale-0">
           <img src="/assets/Logos/sorepco.png" alt="logo" class="mx-auto max-w-[80%]">
-        </div>
-        <div class="flex items-center justify-center aspect-square">
+        </li>
+        <li class="flex items-center justify-center aspect-square scale-0">
           <img src="/assets/Logos/maviance.png" alt="logo" class="mx-auto max-w-[80%]">
-        </div>
-        <div class="flex items-center justify-center aspect-square">
+        </li>
+        <li class="flex items-center justify-center aspect-square scale-0">
           <img src="/assets/Logos/17.png" alt="logo" class="mx-auto max-w-[80%]">
-        </div>
-        <div class="flex items-center justify-center aspect-square">
+        </li>
+        <li class="flex items-center justify-center aspect-square scale-0">
           <img src="/assets/Logos/11.png" alt="logo" class="mx-auto max-w-[80%]">
-        </div>
-      </div>
+        </li>
+      </ul>
       <!-- <div class="overflow-hidden mx-auto">
         <div class="flex gap-5 animate-sponsorsSlider">
           <div class="p-3 w-40 flex shrink-0 items-center">

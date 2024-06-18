@@ -1,3 +1,22 @@
+const loader = document.querySelector(".loader");
+
+const loaderTL = gsap.timeline({
+  paused: true,
+});
+loaderTL
+  .to(".loader img", {
+    delay: 1,
+    keyframes: [
+      { scale: 1.1, duration: 0.1 },
+      { scale: 0.9, duration: 0.3 },
+    ],
+  })
+  .to(".loader", { autoAlpha: 0, duration: 0.5 }, "-=0.5");
+
+window.addEventListener("load", () => {
+  loaderTL.play();
+});
+
 // router.js
 
 function navigateTo(url) {
@@ -20,24 +39,20 @@ function handleLocation() {
     .then((html) => {
       document.getElementById("main-content").innerHTML = html;
 
-      if (path === "/") {
-        // Re-initialize the slider when loading the homepage
-        initializeSlider();
-      }
-
       if (anchor) {
         const element = document.querySelector(anchor);
         if (element) {
           element.scrollIntoView();
         }
       }
-    });
+      if (path === "/") {
+        initializeScript()
+        initializeAnimations()
+      }
+    })
 }
 
 window.onpopstate = handleLocation;
 window.route = navigateTo;
 
 handleLocation();
-
-
-

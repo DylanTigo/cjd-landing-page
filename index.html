@@ -7,6 +7,9 @@
     <title>CJD</title>
   </head>
   <body>
+    <div class="loader">
+      <img src="/assets/logo.jpg" alt="logo de CJD" class="w-[30vmin]">
+    </div>
     <header class="flex flex-col transition">
       <div class="max-md:px-8 px-24 py-2 text-black text-xs font-bold bg-lightning-yellow-500 flex gap-4 justify-end">
         <div class="flex gap-2 items-center">
@@ -25,13 +28,13 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
-        <nav class="hidden md:flex flex-grow justify-end">
+        <nav class="nav hidden md:flex flex-grow justify-end">
           <ul class="flex gap-3 text-black text-base font-bold">
-            <li><a href="/" class="hover:text-jungle-green-600" onclick="event.preventDefault(); route('/');">Accueil</a></li>
-            <li><a href="/" class="hover:text-jungle-green-600" onclick="event.preventDefault(); route('/#vision');">Vision</a></li>
-            <li><a href="/" class="hover:text-jungle-green-600" onclick="event.preventDefault(); route('/#missions');">Missions</a></li>
-            <li><a href="/" class="hover:text-jungle-green-600" onclick="event.preventDefault(); route('/#joinUs');">Contact</a></li>
-            <li><a href="/publications" class="hover:text-jungle-green-600" onclick="event.preventDefault(); route('/publications');">Publications</a></li>
+            <li class="autoAlpha"><a href="/" class="hover:text-jungle-green-600" onclick="event.preventDefault(); route('/');">Accueil</a></li>
+            <li class="autoAlpha"><a href="/" class="hover:text-jungle-green-600" onclick="event.preventDefault(); route('/#vision');">Vision</a></li>
+            <li class="autoAlpha"><a href="/" class="hover:text-jungle-green-600" onclick="event.preventDefault(); route('/#missions');">Missions</a></li>
+            <li class="autoAlpha"><a href="/" class="hover:text-jungle-green-600" onclick="event.preventDefault(); route('/#joinUs');">Contact</a></li>
+            <li class="autoAlpha"><a href="/publications" class="hover:text-jungle-green-600" onclick="event.preventDefault(); route('/publications');">Publications</a></li>
           </ul>
         </nav>
         <div class="bgBlack hidden md:hidden fixed top-0 left-0 w-full h-svh bg-black/50"></div>
@@ -102,10 +105,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="/src/slider.js"></script>
-    <script src="/src/modal.js"></script>
+    <script src="/src/script.js"></script>
     <script src="/src/route.js"></script>
-    <!-- <script src="/src/animation.js"></script> -->
     <script>
       lucide.createIcons();
     </script>
