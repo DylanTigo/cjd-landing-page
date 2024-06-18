@@ -93,7 +93,7 @@ function initializeAnimations() {
     .to("#hero .dot", { scale: 1, stagger: 0.1 }, "-=0.25")
     .to("#hero .sliderBtn:nth-child(1)", {
       x: -10,
-      duration: 0.1,
+      duration: 0.2,
       repeat: 1,
       yoyo: true,
     })
@@ -110,6 +110,7 @@ function initializeAnimations() {
 
   allTextContainer.forEach((text) =>
     gsap.to(text, {
+      duration: 1,
       autoAlpha: 1,
       y: 0,
       ease: "power4.out",
@@ -122,6 +123,7 @@ function initializeAnimations() {
   );
   allImgContainer.forEach((img) =>
     gsap.to(img, {
+      duration: 1,
       scale: 1,
       autoAlpha: 1,
       ease: "power4.out",
@@ -136,34 +138,44 @@ function initializeAnimations() {
   const bureau = document.querySelector("#bureau");
   const allProfileCard = document.querySelectorAll("#bureau .profile-card");
 
-  gsap.to(allProfileCard, {
-    duration: 0.1,
-    y: 0,
-    autoAlpha: 1,
-    ease: "power2.out",
-    stagger: {
-      each: 0.05,
-    },
-    scrollTrigger: {
-      trigger: bureau,
-      start: "top 50%",
-      toggleActions: "play none none reset",
-    },
+  allProfileCard.forEach((card) => {
+    gsap.to(card, {
+      duration: 0.2,
+      y: 0,
+      autoAlpha: 1,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: card,
+        markers: "true",
+        start: "top 70%",
+        toggleActions: "play none none reset",
+      },
+    });
   });
 
   const sponsors = document.querySelectorAll("#sponsors ul li");
   sponsors.forEach((sponsor) =>
     gsap.to(sponsor, {
-      y: 0,
+      scale: 1,
       autoAlpha: 1,
-      stagger: .1,
       scrollTrigger: {
         trigger: "#sponsors",
-        start: "top center",
+        start: "top 50%",
         toggleActions: "play none none reset",
       },
     })
   );
+
+  const footer = document.querySelector("footer")
+  gsap.to(footer, {
+    y: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: footer,
+      start: "top 30%",
+      toggleActions: "play none none reset"
+    }
+  })
 }
 
 window.addEventListener("DOMContentLoaded", () => {
