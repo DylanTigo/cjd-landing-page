@@ -105,22 +105,6 @@ function initializeAnimations() {
 
   heroTL.play();
 
-  const sectionTitles = document.querySelectorAll("#accueil .title");
-
-  sectionTitles.forEach((title) => {
-    gsap.from(title, {
-      duration: 1,
-      autoAlpha: 0,
-      y: 20,
-      ease: "power4.out",
-      scrollTrigger: {
-        trigger: title,
-        start: "top 90%",
-        toggleActions: "play none none none",
-      },
-    });
-  });
-
   const allTextContainer = document.querySelectorAll(".textContainer");
   const allImgContainer = document.querySelectorAll(".imgContainer");
 
@@ -170,10 +154,13 @@ function initializeAnimations() {
   const sponsors = document.querySelectorAll("#sponsors ul li");
   sponsors.forEach((sponsor) =>
     gsap.to(sponsor, {
-      scale: 1,
+      y: 0,
+      autoAlpha: 1,
+      stagger: .1,
       scrollTrigger: {
         trigger: "#sponsors",
-        start: "top 80%",
+        markers: "true",
+        start: "top center",
         toggleActions: "play none none reset",
       },
     })
