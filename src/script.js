@@ -83,18 +83,6 @@ function initializeScript() {
     console.log("Click Bg");
     sponsorModal.classList.add("hidden");
   });
-
-  const menu = document.querySelector("#mobile-menu");
-  const bg = document.querySelector("header .bgBlack");
-  const li = document.querySelectorAll("#mobile-menu li");
-  const toggleMenu = () => {
-    menu.classList.toggle("hidden");
-    bg.classList.toggle("hidden");
-  };
-
-  document.getElementById("menu-toggle").addEventListener("click", toggleMenu);
-  bg.addEventListener("click", toggleMenu);
-  li.forEach((element) => element.addEventListener("click", toggleMenu));
 }
 
 function initializeAnimations() {
@@ -128,7 +116,7 @@ function initializeAnimations() {
       scrollTrigger: {
         trigger: title,
         start: "top 90%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
       },
     });
   });
