@@ -72,15 +72,14 @@ function initializeScript() {
   });
 
   const sponsorBtn = document.querySelector(".sponsorBtn");
-  const sponsorModal = document.querySelector(".sponsor");
-  const bgSponsor = document.querySelector(".sponsor .bgModal");
+  const sponsorModal = document.querySelector("#sponsorModal");
+  const bgSponsor = document.querySelector("#sponsorModal .bgModal");
 
 
   sponsorBtn.addEventListener("click", () => {
     sponsorModal.classList.toggle("hidden");
   });
   bgSponsor.addEventListener("click", () => {
-    console.log("Click Bg");
     sponsorModal.classList.add("hidden");
   });
 
@@ -135,11 +134,10 @@ function initializeAnimations() {
         start: "top 80%",
         toggleActions: "play none none reset",
       },
-    })
-  }
-  );
+    });
+  });
 
-  allImgContainer.forEach((img) =>{
+  allImgContainer.forEach((img) => {
     gsap.to(img, {
       duration: 1.5,
       scale: 1,
@@ -150,9 +148,8 @@ function initializeAnimations() {
         start: "top 60%",
         toggleActions: "play none none reset",
       },
-    })
-  }
-  );
+    });
+  });
 
   const bureau = document.querySelector("#bureau");
   const cardContainer = document.querySelectorAll("#bureau .cardContainer");
@@ -177,7 +174,7 @@ function initializeAnimations() {
       opacity: 1,
       scrollTrigger: {
         trigger: "#sponsors",
-        start: "top 30%",
+        start: "top 40%",
         toggleActions: "play none none reset",
       },
     })
@@ -194,3 +191,8 @@ function initializeAnimations() {
     },
   });
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  initializeScript();
+  initializeAnimations();
+});
