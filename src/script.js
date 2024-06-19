@@ -110,13 +110,13 @@ function initializeAnimations() {
 
   allTextContainer.forEach((text) => {
     gsap.to(text, {
-      duration: .8,
+      duration: 1.2,
       opacity: 1,
       y: 0,
       ease: "power4.out",
       scrollTrigger: {
         trigger: text,
-        start: "top 90%",
+        start: "top 80%",
         toggleActions: "play none none reset",
       },
     })
@@ -125,13 +125,13 @@ function initializeAnimations() {
 
   allImgContainer.forEach((img) =>{
     gsap.to(img, {
-      duration: .8,
+      duration: 1.2,
       scale: 1,
       opacity: 1,
       ease: "power4.out",
       scrollTrigger: {
         trigger: img,
-        start: "top 80%",
+        start: "top 65%",
         toggleActions: "play none none reset",
       },
     })
@@ -143,7 +143,7 @@ function initializeAnimations() {
 
   gsap.to(cardContainer, {
     y: 0,
-    duration: 1.3,
+    duration: 1.5,
     opacity: 1,
     ease: "power4.out",
     scrollTrigger: {
@@ -156,6 +156,7 @@ function initializeAnimations() {
   const sponsors = document.querySelectorAll("#sponsors ul li");
   sponsors.forEach((sponsor) =>
     gsap.to(sponsor, {
+      duration: 1,
       scale: 1,
       opacity: 1,
       scrollTrigger: {
@@ -178,10 +179,3 @@ function initializeAnimations() {
   });
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
-    initializeScript();
-    initializeAnimations();
-    console.log("hello");
-  }, 2000);
-});

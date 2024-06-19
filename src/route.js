@@ -14,7 +14,10 @@ loaderTL
   .to(".loader", { autoAlpha: 0, duration: 0.5 }, "-=0.5");
 
 window.addEventListener("load", () => {
+});
+window.addEventListener("DOMContentLoaded", () => {
   loaderTL.play();
+    initializeScript();
 });
 
 //Toggle du menu de navigation
@@ -59,8 +62,7 @@ function handleLocation() {
         }
       }
       if (path === "/") {
-        initializeScript()
-        initializeAnimations()
+        initializeAnimations();
       }
     })
 }
