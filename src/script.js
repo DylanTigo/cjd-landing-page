@@ -88,8 +88,8 @@ function initializeScript() {
 function initializeAnimations() {
   const heroTL = gsap.timeline({ paused: true, delay: 0.5 });
   heroTL
-    .to("#hero", { y: 0, autoAlpha: 1 })
-    .to("nav.nav li", { y: 0, autoAlpha: 1, stagger: 0.1 }, "-=0.5")
+    .to("#hero", { y: 0, opacity: 1 })
+    .to("nav.nav li", { y: 0, opacity: 1, stagger: 0.1 }, "-=0.5")
     .to("#hero .dot", { scale: 1, stagger: 0.1 }, "-=0.25")
     .to("#hero .sliderBtn:nth-child(1)", {
       x: -10,
@@ -110,8 +110,8 @@ function initializeAnimations() {
 
   allTextContainer.forEach((text) =>
     gsap.to(text, {
-      duration: 1,
-      autoAlpha: 1,
+      duration: .8,
+      opacity: 1,
       y: 0,
       ease: "power4.out",
       scrollTrigger: {
@@ -121,11 +121,12 @@ function initializeAnimations() {
       },
     })
   );
+
   allImgContainer.forEach((img) =>
     gsap.to(img, {
-      duration: 1,
+      duration: .8,
       scale: 1,
-      autoAlpha: 1,
+      opacity: 1,
       ease: "power4.out",
       scrollTrigger: {
         trigger: img,
@@ -136,46 +137,43 @@ function initializeAnimations() {
   );
 
   const bureau = document.querySelector("#bureau");
-  const allProfileCard = document.querySelectorAll("#bureau .profile-card");
+  const cardContainer = document.querySelectorAll("#bureau .cardContainer");
 
-  allProfileCard.forEach((card) => {
-    gsap.to(card, {
-      duration: 0.2,
-      y: 0,
-      autoAlpha: 1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: card,
-        markers: "true",
-        start: "top 70%",
-        toggleActions: "play none none reset",
-      },
-    });
+  gsap.to(cardContainer, {
+    y: 0,
+    duration: 1.3,
+    opacity: 1,
+    ease: "power4.out",
+    scrollTrigger: {
+      trigger: bureau,
+      start: "top 30%",
+      toggleActions: "play none none reset",
+    },
   });
 
   const sponsors = document.querySelectorAll("#sponsors ul li");
   sponsors.forEach((sponsor) =>
     gsap.to(sponsor, {
       scale: 1,
-      autoAlpha: 1,
+      opacity: 1,
       scrollTrigger: {
         trigger: "#sponsors",
-        start: "top 50%",
+        start: "top 30%",
         toggleActions: "play none none reset",
       },
     })
   );
 
-  const footer = document.querySelector("footer")
+  const footer = document.querySelector("footer");
   gsap.to(footer, {
     y: 0,
     duration: 1,
     scrollTrigger: {
       trigger: footer,
       start: "top 30%",
-      toggleActions: "play none none reset"
-    }
-  })
+      toggleActions: "play none none reset",
+    },
+  });
 }
 
 window.addEventListener("DOMContentLoaded", () => {

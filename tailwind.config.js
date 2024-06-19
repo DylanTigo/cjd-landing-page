@@ -3,6 +3,9 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        'xs': '400px'
+      },
       fontFamily: {
         "levenim": ["Levenim", "sans-serif"],
         "gothic": ["Gothic", "sans-serif"],
