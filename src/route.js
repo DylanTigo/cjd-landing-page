@@ -59,6 +59,7 @@ function handleLocation() {
         }
       }
       if (path === "/") {
+        initiliseScript();
         initializeAnimations();
       }
     })
@@ -66,9 +67,5 @@ function handleLocation() {
 
 window.onpopstate = handleLocation;
 window.route = navigateTo;
-
-window.addEventListener("DOMContentLoaded", () => {
-  initializeScript();
-});
 
 handleLocation();

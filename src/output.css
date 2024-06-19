@@ -1285,6 +1285,11 @@ nav li {
   margin-right: auto;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .\!mb-0 {
   margin-bottom: 0px !important;
 }
@@ -1548,6 +1553,10 @@ nav li {
   min-width: 100%;
 }
 
+.max-w-14 {
+  max-width: 3.5rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1572,16 +1581,20 @@ nav li {
   max-width: 50%;
 }
 
-.max-w-\[60\%\] {
-  max-width: 60%;
-}
-
 .max-w-\[80\%\] {
   max-width: 80%;
 }
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-36 {
+  max-width: 9rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .flex-shrink {
@@ -2021,10 +2034,6 @@ nav li {
   grid-auto-flow: column dense;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -2227,11 +2236,6 @@ nav li {
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-x-10 {
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
 }
 
 .gap-x-4 {
@@ -3640,10 +3644,6 @@ nav li {
     width: 100%;
   }
 
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -3685,12 +3685,6 @@ nav li {
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:flex-row {
-    flex-direction: row;
   }
 }
 

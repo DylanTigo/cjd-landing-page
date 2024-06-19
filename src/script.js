@@ -153,7 +153,7 @@ function initializeAnimations() {
     },
   });
 
-  const sponsors = document.querySelectorAll("#sponsors ul li");
+  const sponsors = document.querySelectorAll("#sponsors .sponsor");
   sponsors.forEach((sponsor) =>
     gsap.to(sponsor, {
       duration: 1,
@@ -178,3 +178,8 @@ function initializeAnimations() {
     },
   });
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  initializeScript();
+  initializeAnimations()
+});
