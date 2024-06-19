@@ -94,7 +94,7 @@ function initializeScript() {
     const subject = `Devenir Sponsor par ${name} ${surname}`;
     const body = `Bonjour CJD,%0D%0A%0D%0ANous avons reçu un formulaire rempli avec les informations suivantes :%0D%0A%0D%0ANom : ${name}%0D%0APrénom : ${surname}%0D%0AEmail : ${email}%0D%0ATéléphone : ${number}%0D%0ANom de l'entreprise : ${company}%0D%0A%0D%0ACes informations ont été soumises par ${name} ${surname}.%0D%0A%0D%0ASi vous avez des questions ou avez besoin de plus d'informations, vous pouvez contacter l'émetteur à l'adresse email ${email} ou au numéro de téléphone ${number}.%0D%0A%0D%0ACordialement,%0D%0A[Votre Nom]`;
 
-    window.location.href = `mailto:contact@cjd-asso.com?subject=${encodeURIComponent(
+    window.location.href = `mailto:kenouyakevin@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
   }

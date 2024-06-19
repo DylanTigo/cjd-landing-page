@@ -229,7 +229,7 @@
       >
         <img src="/assets/3.jpg" alt="image" />
         <div class="text">
-          <h3>Sécrétaire Générale</h3>
+          <h3>Sécrétaire Général</h3>
           <p class="name">Louis-Marie TCHAPDA</p>
         </div>
       </a>
@@ -240,7 +240,7 @@
       >
         <img src="/assets/4.jpg" alt="image" />
         <div class="text">
-          <h3>Sécrétaire Général Adjointe</h3>
+          <h3>Sécrétaire Générale Adjointe</h3>
           <p class="name">Nelly CHATUE DIOP</p>
         </div>
       </a>
@@ -532,20 +532,47 @@
           />
         </div>
         <div class="flex flex-col mb-4 w-full">
-          <label for="company" class="text-base font-medium"
-            >Nom de l'entreprise</label
-          >
+          <label for="surname" class="text-base font-medium mb-2">Prénom</label>
           <input
             type="text"
-            id="company"
+            id="surname"
             class="py-2 px-3 border border-gray-300 rounded-lg"
           />
         </div>
       </div>
+      <div class="flex gap-4">
+        <div class="flex flex-col mb-4 w-full">
+          <label for="email" class="text-base font-medium">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="py-2 px-3 border border-gray-300 rounded-lg"
+          />
+        </div>
+        <div class="flex flex-col mb-4 w-full">
+          <label for="number" class="text-base font-medium"
+            >Numéro de téléphone</label
+          >
+          <input
+            type="tel"
+            id="number"
+            class="py-2 px-3 border border-gray-300 rounded-lg"
+          />
+        </div>
+      </div>
+      <div class="flex flex-col mb-4 w-full">
+        <label for="company" class="text-base font-medium"
+          >Nom de l'entreprise</label
+        >
+        <input
+          type="text"
+          id="company"
+          class="py-2 px-3 border border-gray-300 rounded-lg"
+        />
+      </div>
       <button
         type="submit"
-        class="btn px-6 py-2 mx-auto mt-6 block rounded-lg text-lg text-black font-bold bg-jungle-green-500 hover:bg-jungle-green-600 active:bg-jungle-green-700"
-        onclick="sendEmail()"
+        class="px-6 py-2 mx-auto mt-6 block rounded-lg text-lg text-white font-bold bg-jungle-green-500 hover:bg-jungle-green-600 active:bg-jungle-green-700"
       >
         Devenir Sponsor
       </button>
