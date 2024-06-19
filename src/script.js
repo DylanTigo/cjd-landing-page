@@ -110,7 +110,7 @@ function initializeAnimations() {
 
   allTextContainer.forEach((text) => {
     gsap.to(text, {
-      duration: 1.2,
+      duration: 1.5,
       opacity: 1,
       y: 0,
       ease: "power4.out",
@@ -125,13 +125,13 @@ function initializeAnimations() {
 
   allImgContainer.forEach((img) =>{
     gsap.to(img, {
-      duration: 1.2,
+      duration: 1.5,
       scale: 1,
       opacity: 1,
       ease: "power4.out",
       scrollTrigger: {
         trigger: img,
-        start: "top 65%",
+        start: "top 60%",
         toggleActions: "play none none reset",
       },
     })
