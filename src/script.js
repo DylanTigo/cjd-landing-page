@@ -75,14 +75,30 @@ function initializeScript() {
   const sponsorModal = document.querySelector(".sponsor");
   const bgSponsor = document.querySelector(".sponsor .bgModal");
 
+
   sponsorBtn.addEventListener("click", () => {
-    console.log("Click");
     sponsorModal.classList.toggle("hidden");
   });
   bgSponsor.addEventListener("click", () => {
     console.log("Click Bg");
     sponsorModal.classList.add("hidden");
   });
+
+  const sponsorForm = document.querySelector("#sponsorForm")
+  function sendEmail() {
+    const name = document.getElementById('name').value;
+    const surname = document.getElementById('surname').value;
+    const email = document.getElementById('email').value;
+    const number = document.getElementById('number').value;
+    const company = document.getElementById('company').value;
+
+    const subject = `Devenir Sponsor par ${name} ${surname}`;
+    const body = `Bonjour CJD,%0D%0A%0D%0ANous avons reçu un formulaire rempli avec les informations suivantes :%0D%0A%0D%0ANom : ${name}%0D%0APrénom : ${surname}%0D%0AEmail : ${email}%0D%0ATéléphone : ${number}%0D%0ANom de l'entreprise : ${company}%0D%0A%0D%0ACes informations ont été soumises par ${name} ${surname}.%0D%0A%0D%0ASi vous avez des questions ou avez besoin de plus d'informations, vous pouvez contacter l'émetteur à l'adresse email ${email} ou au numéro de téléphone ${number}.%0D%0A%0D%0ACordialement,%0D%0A[Votre Nom]`;
+
+    window.location.href = `mailto:contact@cjd-asso.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }
+  sponsorForm.addEventListener("submit", sendEmail)
+
 }
 
 function initializeAnimations() {
@@ -178,8 +194,3 @@ function initializeAnimations() {
     },
   });
 }
-
-window.addEventListener("DOMContentLoaded", () => {
-  initializeScript();
-  initializeAnimations()
-});

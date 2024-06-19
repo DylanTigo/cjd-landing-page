@@ -59,7 +59,7 @@ function handleLocation() {
         }
       }
       if (path === "/") {
-        initiliseScript();
+        initializeScript();
         initializeAnimations();
       }
     })
