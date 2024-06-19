@@ -108,7 +108,7 @@ function initializeAnimations() {
   const allTextContainer = document.querySelectorAll(".textContainer");
   const allImgContainer = document.querySelectorAll(".imgContainer");
 
-  allTextContainer.forEach((text) =>
+  allTextContainer.forEach((text) => {
     gsap.to(text, {
       duration: .8,
       opacity: 1,
@@ -120,9 +120,10 @@ function initializeAnimations() {
         toggleActions: "play none none reset",
       },
     })
+  }
   );
 
-  allImgContainer.forEach((img) =>
+  allImgContainer.forEach((img) =>{
     gsap.to(img, {
       duration: .8,
       scale: 1,
@@ -130,10 +131,12 @@ function initializeAnimations() {
       ease: "power4.out",
       scrollTrigger: {
         trigger: img,
+        markers: "true",
         start: "top 90%",
         toggleActions: "play none none reset",
       },
     })
+  }
   );
 
   const bureau = document.querySelector("#bureau");
