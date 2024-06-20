@@ -1465,10 +1465,6 @@ nav li {
   height: 1.5rem;
 }
 
-.h-\[40lvh\] {
-  height: 40lvh;
-}
-
 .h-full {
   height: 100%;
 }
@@ -1487,6 +1483,10 @@ nav li {
 
 .min-h-\[30lvh\] {
   min-height: 30lvh;
+}
+
+.min-h-\[40lvh\] {
+  min-height: 40lvh;
 }
 
 .min-h-lvh {
@@ -1553,12 +1553,12 @@ nav li {
   min-width: 100%;
 }
 
-.max-w-14 {
-  max-width: 3.5rem;
-}
-
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-36 {
+  max-width: 9rem;
 }
 
 .max-w-3xl {
@@ -1581,20 +1581,8 @@ nav li {
   max-width: 50%;
 }
 
-.max-w-\[80\%\] {
-  max-width: 80%;
-}
-
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-36 {
-  max-width: 9rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
 }
 
 .flex-shrink {

@@ -58,17 +58,18 @@ function initializeScript() {
   startSlideShow();
 
   // Modals
-  const joinUsBtns = document.querySelectorAll(".joinUsBtn");
-  const joinUsModal = document.querySelector(".joinUs");
-  const bgModal = document.querySelector(".bgModal");
+  const partnershipBtn = document.querySelectorAll(".partnershipBtn");
+  const partnershipModal = document.querySelector(".partnership");
+  const bgModal = document.querySelector(".partnership .bgModal");
 
-  joinUsBtns.forEach((btn) =>
+  partnershipBtn.forEach((btn) =>
     btn.addEventListener("click", () => {
-      joinUsModal.classList.toggle("hidden");
+      console.log("YOO");
+      partnershipModal.classList.toggle("hidden");
     })
   );
   bgModal.addEventListener("click", () => {
-    joinUsModal.classList.add("hidden");
+    partnershipModal.classList.add("hidden");
   });
 
   const sponsorBtn = document.querySelector(".sponsorBtn");
@@ -76,29 +77,89 @@ function initializeScript() {
   const bgSponsor = document.querySelector("#sponsorModal .bgModal");
 
   sponsorBtn.addEventListener("click", () => {
-    // console.log("SPONSOR");
     sponsorModal.classList.toggle("hidden");
   });
   bgSponsor.addEventListener("click", () => {
     sponsorModal.classList.add("hidden");
   });
 
-  const sponsorForm = document.querySelector("#sponsorForm");
-  function sendEmail() {
-    const name = document.getElementById("name").value;
-    const surname = document.getElementById("surname").value;
-    const email = document.getElementById("email").value;
-    const number = document.getElementById("number").value;
-    const company = document.getElementById("company").value;
+  function submitSponsorForm(e) {
+    e.preventDefault();
+    const name = document.querySelector("#sponsorModal .name").value;
+    const surname = document.querySelector("#sponsorModal .surname").value;
+    const email = document.querySelector("#sponsorModal .email").value;
+    const number = document.querySelector("#sponsorModal .number").value;
+    const company = document.querySelector("#sponsorModal .company").value;
 
-    const subject = `Devenir Sponsor par ${name} ${surname}`;
-    const body = `Bonjour CJD,%0D%0A%0D%0ANous avons reçu un formulaire rempli avec les informations suivantes :%0D%0A%0D%0ANom : ${name}%0D%0APrénom : ${surname}%0D%0AEmail : ${email}%0D%0ATéléphone : ${number}%0D%0ANom de l'entreprise : ${company}%0D%0A%0D%0ACes informations ont été soumises par ${name} ${surname}.%0D%0A%0D%0ASi vous avez des questions ou avez besoin de plus d'informations, vous pouvez contacter l'émetteur à l'adresse email ${email} ou au numéro de téléphone ${number}.%0D%0A%0D%0ACordialement,%0D%0A[Votre Nom]`;
+    const data = {
+      name,
+      surname,
+      email,
+      number,
+      company,
+    };
 
-    window.location.href = `mailto:kenouyakevin@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
+    console.log(data);
+    fetch("https://email-smpt-server-cjd.vercel.app/sponsor", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.text())
+      .then((result) => {
+        alert(`Email de demande de partenariat envoyé avec succès !`);
+        sponsorModal.classList.toggle("hidden");
+      })
+      .catch((error) => {
+        alert("Erreur lors de l'envoie")
+        console.error("Erreur:", error);
+      });
   }
-  sponsorForm.addEventListener("submit", sendEmail);
+  const sponsorForm = document.querySelector("#sponsorForm");
+  sponsorForm.addEventListener("submit", submitSponsorForm);
+
+  function submitPartnershipForm(e) {
+    e.preventDefault();
+    const name = document.querySelector("#partnershipForm .name").value;
+    const surname = document.querySelector("#partnershipForm .surname").value;
+    const dateNais = document.querySelector("#partnershipForm .dateNais").value;
+    const email = document.querySelector("#partnershipForm .email").value;
+    const number = document.querySelector("#partnershipForm .number").value;
+    const company = document.querySelector("#partnershipForm .company").value;
+    const whyUs = document.querySelector("#partnershipForm .whyUs").value;
+
+    const data = {
+      name,
+      surname,
+      dateNais,
+      email,
+      number,
+      company,
+      whyUs,
+    };
+
+    console.log(data);
+    fetch("https://email-smpt-server-cjd.vercel.app/partnership", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.text())
+      .then((result) => {
+        alert("Email de demande de partenariat envoyé avec succès !");
+        partnershipModal.classList.toggle("hidden");
+      })
+      .catch((error) => {
+        alert("Erreur lors de l'envoie")
+        console.error("Erreur:", error);
+      });
+  }
+  const partnershipForm = document.querySelector("#partnershipForm");
+  partnershipForm.addEventListener("submit", submitPartnershipForm);
 }
 
 function initializeAnimations() {
@@ -193,7 +254,7 @@ function initializeAnimations() {
   });
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-  initializeScript();
-  initializeAnimations();
-});
+// window.addEventListener("DOMContentLoaded", () => {
+//   initializeScript();
+//   initializeAnimations();
+// });
