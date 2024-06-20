@@ -110,7 +110,7 @@
   }
 
   .btn {
-    @apply w-fit px-10 py-4 mt-8 block rounded-lg text-xl text-black font-bold bg-lightning-yellow-500 hover:bg-lightning-yellow-400 active:bg-lightning-yellow-700;
+    @apply flex gap-4 w-fit px-10 py-4 mt-8 rounded-lg text-xl text-black font-bold bg-lightning-yellow-500 hover:bg-lightning-yellow-400 active:bg-lightning-yellow-700;
   }
 
   #joinUs .logo {
@@ -126,6 +126,21 @@
   .gallery img {
     @apply w-full h-full object-cover object-center rounded;
   }
+  .toast{
+    @apply py-3 px-5 text-base flex justify-center min-w-48 fixed bottom-8 right-8 z-50 rounded-lg translate-y-14 opacity-0
+  }
+  .toast.show{
+    @apply translate-y-0 opacity-100
+  }
+  .toast.success{
+    @apply text-green-900 font-bold bg-green-200
+  }
+  .toast.warning{
+    @apply text-yellow-900 font-bold bg-yellow-200
+  }
+  .toast.error{
+    @apply text-red-900 font-bold bg-red-200
+  }
 }
 
 @layer utilities{
@@ -134,5 +149,8 @@
   }
   .imgContainer{
     @apply opacity-0 scale-0
+  }
+  .errorInput{
+    @apply border-2 border-red-600 animate-error
   }
 }

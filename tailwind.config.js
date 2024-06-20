@@ -57,11 +57,19 @@ module.exports = {
         slide: "slide 40s infinite linear",
         sponsorsSlider: "sponsorSlide 12s infinite ease-in-out",
         slideGallery: "slide 60s infinite linear",
+        error: "error .3s"
       },
       keyframes: {
         slide: {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-100%)" },
+        },
+        error: {
+          "0%": { transform: "translateX(10px)" },
+          "25%": { transform: "translateX(-10px)" },
+          "50%": { transform: "translateX(10px)" },
+          "75%": { transform: "translateX(-10px)" },
+          "100%": { transform: "translateX(0)" },
         },
         sponsorSlide: {
           "0%, 20%": { transform: "translateX(0)" },
