@@ -263,7 +263,7 @@ function initializeAnimations() {
       ease: "power4.out",
       scrollTrigger: {
         trigger: text,
-        start: "top 80%",
+        start: "top 85%",
         toggleActions: "play none none reset",
       },
     });
@@ -277,7 +277,7 @@ function initializeAnimations() {
       ease: "power4.out",
       scrollTrigger: {
         trigger: img,
-        start: "top 60%",
+        start: "top 80%",
         toggleActions: "play none none reset",
       },
     });
@@ -293,7 +293,7 @@ function initializeAnimations() {
     ease: "power4.out",
     scrollTrigger: {
       trigger: bureau,
-      start: "top 30%",
+      start: "top 60%",
       toggleActions: "play none none reset",
     },
   });
@@ -306,7 +306,7 @@ function initializeAnimations() {
       opacity: 1,
       scrollTrigger: {
         trigger: "#sponsors",
-        start: "top 40%",
+        start: "top 60%",
         toggleActions: "play none none reset",
       },
     })
@@ -318,7 +318,7 @@ function initializeAnimations() {
     duration: 1,
     scrollTrigger: {
       trigger: footer,
-      start: "top 30%",
+      start: "top 60%",
       toggleActions: "play none none reset",
     },
   });
