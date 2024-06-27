@@ -252,35 +252,60 @@ function initializeAnimations() {
 
   heroTL.play();
 
-  const allTextContainer = document.querySelectorAll(".textContainer");
-  const allImgContainer = document.querySelectorAll(".imgContainer");
-
-  allTextContainer.forEach((text) => {
-    gsap.to(text, {
-      duration: 1.5,
-      opacity: 1,
-      y: 0,
-      ease: "power4.out",
-      scrollTrigger: {
-        trigger: text,
-        start: "top 85%",
-        toggleActions: "play none none reset",
-      },
-    });
+  const visionText = document.querySelectorAll("#vision .textContainer");
+  const visionImg = document.querySelectorAll("#vision .imgContainer");
+  gsap.to(visionText, {
+    duration: 1.5,
+    opacity: 1,
+    y: 0,
+    ease: "power4.out",
+    stagger: .2,
+    scrollTrigger: {
+      trigger: "#vision",
+      start: "top 85%",
+      toggleActions: "play none none reset",
+    },
   });
 
-  allImgContainer.forEach((img) => {
-    gsap.to(img, {
-      duration: 1.5,
-      scale: 1,
-      opacity: 1,
-      ease: "power4.out",
-      scrollTrigger: {
-        trigger: img,
-        start: "top 80%",
-        toggleActions: "play none none reset",
-      },
-    });
+  gsap.to(visionImg, {
+    duration: 1.5,
+    scale: 1,
+    opacity: 1,
+    ease: "power4.out",
+    stagger: .2,
+    scrollTrigger: {
+      trigger: "#vision",
+      start: "top 85%",
+      toggleActions: "play none none reset",
+    },
+  });
+
+  const allTextContainer = document.querySelectorAll("#missions .textContainer");
+  const allImgContainer = document.querySelectorAll("#missions .imgContainer");
+  gsap.to(allTextContainer, {
+    duration: 1.5,
+    opacity: 1,
+    y: 0,
+    ease: "power4.out",
+    stagger: .2,
+    scrollTrigger: {
+      trigger: "#missions",
+      start: "top 85%",
+      toggleActions: "play none none reset",
+    },
+  });
+
+  gsap.to(allImgContainer, {
+    duration: 1.5,
+    scale: 1,
+    opacity: 1,
+    ease: "power4.out",
+    stagger: .2,
+    scrollTrigger: {
+      trigger: "#missions",
+      start: "top 85%",
+      toggleActions: "play none none reset",
+    },
   });
 
   const bureau = document.querySelector("#bureau");

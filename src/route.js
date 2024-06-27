@@ -17,6 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
   loaderTL.play();
 });
 
+
 //Toggle du menu de navigation
 const menu = document.querySelector("#mobile-menu");
 const bg = document.querySelector("header .bgBlack");
@@ -30,6 +31,29 @@ document.getElementById("menu-toggle").addEventListener("click", toggleMenu);
 bg.addEventListener("click", toggleMenu);
 li.forEach((element) => element.addEventListener("click", toggleMenu));
 
+//Sticky header on scroll
+const body = document.body
+let lastScroll = 0
+
+window.addEventListener("scroll", () => {
+  let currentScroll = window.scrollY
+
+  if(currentScroll <= 0) {
+    body.classList.remove("scroll-up")
+  }
+
+  if(currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-up")
+    body.classList.add("scroll-down")
+  }
+
+  if(currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-down")
+    body.classList.add("scroll-up")
+  }
+
+  lastScroll = currentScroll
+})
 // router.js
 
 function navigateTo(url) {

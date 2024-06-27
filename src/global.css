@@ -50,7 +50,7 @@
   }
 
   .mini-title{
-    @apply relative w-fit z-10 text-lg lg:text-2xl font-bold font-gothic block mx-auto
+    @apply relative w-fit z-10 text-2xl lg:text-3xl font-bold font-gothic block mx-auto
   }
   .mini-title::after{
     @apply bg-lightning-yellow-500/50
@@ -157,9 +157,15 @@
     @apply border-2 border-red-600 animate-error
   }
   .section{
-    @apply  md:min-h-lvh pt-8 flex flex-col justify-between 
+    @apply  min-h-lvh pt-6 md:pt-8 flex flex-col justify-between 
   }
   .section > div:first-of-type{
     @apply grow
+  }
+  .scroll-down header{
+    @apply translate-y-[-100%] shadow-sm
+  }
+  .scroll-up header{
+    @apply translate-y-0
   }
 }
