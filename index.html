@@ -11,11 +11,11 @@
     <div class="loader z-[999]">
       <img src="/assets/logo.jpg" alt="logo de CJD" class="w-[30vmin]" />
     </div>
-    <header id="header" class="flex w-full items-end bg-white fixed top-0 z-50 transition drop-shadow-sm">
+    <header id="header" class="flex w-full items-end bg-white fixed top-0 z-50 transition pb-4">
       <img src="/assets/logo.jpg" alt="logo" class="md:w-36 w-28" />
       <div class="flex grow flex-col flex-end">
         <div
-          class="max-md:px-4 px-10 py-2 text-black text-xs font-bold bg-lightning-yellow-500 flex sm:gap-4 gap-2 justify-end"
+          class="max-md:px-4 px-10 py-2 text-black text-xs font-bold bg-lightning-yellow-500 flex max-xs:flex-col sm:gap-2 gap-1 justify-end"
         >
           <div class="flex gap-1 md:gap-2 justify-end items-center text-nowrap max-md:text-[10px]">
             <svg
@@ -29,9 +29,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               class="lucide lucide-phone max-md:size-3"
-            ><path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <p class="">+237 657 38 59 45</p>
+            ><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><p class="">+237 657 38 59 45</p>
           </div>
           <div class="flex gap-1 md:gap-2 justify-end items-center text-nowrap max-md:text-[10px]">
             <svg
@@ -98,6 +96,14 @@
                   class="hover:text-jungle-green-600"
                   onclick="event.preventDefault(); route('/#missions');"
                   >Missions</a
+                >
+              </li>
+              <li class="autoAlpha">
+                <a
+                  href="/"
+                  class="hover:text-jungle-green-600"
+                  onclick="event.preventDefault(); route('/#bureau');"
+                  >Bureau</a
                 >
               </li>
               <li class="autoAlpha">
@@ -206,7 +212,7 @@
       </div>
     </header>
 
-    <main id="main-content" class="grow md:mt-36 mt-28"></main>
+    <main id="main-content" class="grow md:mt-40 mt-32"></main>
 
     <footer
       class="bg-jungle-green-500 text-sm text-white pt-6 transition translate-y-52llm"
@@ -219,72 +225,76 @@
 
           <div class="p-5 grow max-w-[50%]">
             <h3 class="text-lg font-bold mb-2 text-nowrap">Liens Utiles</h3>
-            <ul class="list-none">
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-jungle-green-600"
-                  onclick="event.preventDefault(); route('/#header');"
-                  >Accueil</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/#vision');"
-                  >Vision</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/#missions');"
-                  >Missions</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/#bureau');"
-                  >Bureau</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/#joinUs');"
-                  >Contact</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/#sponsors');"
-                  >Sponsors</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/#evenement');"
-                  >Events</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/publications"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/publications');"
-                  >Publications</a
-                >
-              </li>
-            </ul>
+            <div class="flex gap-4">
+              <ul class="list-none">
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-jungle-green-600"
+                    onclick="event.preventDefault(); route('/#header');"
+                    >Accueil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/#vision');"
+                    >Vision</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/#missions');"
+                    >Missions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/#bureau');"
+                    >Bureau</a
+                  >
+                </li>
+              </ul>
+              <ul class="list-none">
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/#joinUs');"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/#sponsors');"
+                    >Sponsors</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/#evenement');"
+                    >Events</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/publications"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/publications');"
+                    >Publications</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="p-5 grow max-w-[50%]">

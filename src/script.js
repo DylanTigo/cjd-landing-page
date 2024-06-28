@@ -201,7 +201,6 @@ function initializeScript() {
   
     const data = { name, surname, dateNais, email, number, company, whyUs };
   
-    console.log(data);
     fetch("https://email-smpt-server-cjd.vercel.app/partnership", {
       method: "POST",
       headers: {
