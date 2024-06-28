@@ -232,6 +232,7 @@ function initializeScript() {
 }
 
 function initializeAnimations() {
+  gsap.registerPlugin()
   const heroTL = gsap.timeline({ paused: true, delay: 0.5 });
   heroTL
     .to("#hero", { y: 0, opacity: 1 })

@@ -1102,6 +1102,7 @@ nav li {
 @media (min-width: 768px) {
   .gallery .item {
     height: 16rem;
+    min-height: 40svh;
   }
 }
 
@@ -1117,6 +1118,7 @@ nav li {
 @media (min-width: 768px) {
   .gallery .\!item {
     height: 16rem;
+    min-height: 40svh;
   }
 }
 
@@ -1561,16 +1563,16 @@ nav li {
   height: 80% !important;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
 .h-5 {
   height: 1.25rem;
 }
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-\[30vh\] {
+  height: 30vh;
 }
 
 .h-\[80\%\] {
@@ -2869,10 +2871,6 @@ nav li {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 246 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\/assets\/image\/Bulletin-adh\E9sion\.PNG\'\)\] {
-  background-image: url('/assets/image/Bulletin-adhésion.PNG');
 }
 
 .bg-\[url\(\'\/assets\/image\/charte-finale\.PNG\'\)\] {
