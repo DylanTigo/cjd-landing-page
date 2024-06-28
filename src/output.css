@@ -1102,7 +1102,7 @@ nav li {
 @media (min-width: 768px) {
   .gallery .item {
     height: 16rem;
-    min-height: 40svh;
+    min-height: 30svh;
   }
 }
 
@@ -1118,7 +1118,7 @@ nav li {
 @media (min-width: 768px) {
   .gallery .\!item {
     height: 16rem;
-    min-height: 40svh;
+    min-height: 30svh;
   }
 }
 
@@ -3044,11 +3044,6 @@ nav li {
   padding-right: 1.5rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -3074,10 +3069,6 @@ nav li {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .text-left {
@@ -3854,13 +3845,14 @@ nav li {
     flex-direction: column;
   }
 
-  .max-md\:p-4 {
-    padding: 1rem;
-  }
-
   .max-md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .max-md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .max-md\:text-\[10px\] {

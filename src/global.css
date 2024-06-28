@@ -124,7 +124,7 @@
     @apply flex gap-3 mx-auto shrink-0;
   }
   .gallery .item {
-    @apply h-48 w-auto md:h-64 list-none shrink-0 p-[2px] min-h-[40svh] md:min-h-[40svh];
+    @apply h-48 w-auto md:h-64 list-none shrink-0 p-[2px] min-h-[40svh] md:min-h-[30svh];
   }
   .gallery img {
     @apply w-full h-full object-cover object-center rounded;
