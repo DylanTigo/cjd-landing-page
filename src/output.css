@@ -1092,6 +1092,7 @@ nav li {
 
 .gallery .item {
   height: 12rem;
+  min-height: 35svh;
   width: auto;
   flex-shrink: 0;
   list-style-type: none;
@@ -1106,6 +1107,7 @@ nav li {
 
 .gallery .\!item {
   height: 12rem;
+  min-height: 35svh;
   width: auto;
   flex-shrink: 0;
   list-style-type: none;
@@ -3008,16 +3010,16 @@ nav li {
   padding: 4rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .p-8 {
@@ -3072,12 +3074,12 @@ nav li {
   padding-bottom: 1rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-left {
@@ -3959,6 +3961,10 @@ nav li {
     padding: 0.75rem;
   }
 
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -3975,6 +3981,11 @@ nav li {
 
   .md\:pt-4 {
     padding-top: 1rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
