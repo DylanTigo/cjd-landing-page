@@ -492,9 +492,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 246 / var(--tw-bg-opacity));
@@ -729,7 +726,7 @@ nav li {
 }
 
 .hero-title, .title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   font-family: Gothic, sans-serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -772,19 +769,26 @@ nav li {
   z-index: 10;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  margin-bottom: 0.75rem;
   width: -moz-fit-content;
   width: fit-content;
+  text-align: center;
   font-family: Gothic, sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .mini-title {
+    margin-bottom: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .mini-title {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1023,7 +1027,7 @@ nav li {
 }
 
 .profile-card p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 700;
@@ -1062,6 +1066,7 @@ nav li {
 #joinUs .logo {
   display: flex;
   height: 6rem !important;
+  max-height: 15vh;
   width: auto;
   align-items: center;
   padding: 0.5rem;
@@ -1089,7 +1094,7 @@ nav li {
 }
 
 .gallery .item {
-  height: 12rem;
+  height: 14rem;
   width: auto;
   flex-shrink: 0;
   list-style-type: none;
@@ -1098,12 +1103,12 @@ nav li {
 
 @media (min-width: 768px) {
   .gallery .item {
-    height: 16rem;
+    height: 18rem;
   }
 }
 
 .gallery .\!item {
-  height: 12rem;
+  height: 14rem;
   width: auto;
   flex-shrink: 0;
   list-style-type: none;
@@ -1112,7 +1117,7 @@ nav li {
 
 @media (min-width: 768px) {
   .gallery .\!item {
-    height: 16rem;
+    height: 18rem;
   }
 }
 
@@ -1354,6 +1359,11 @@ nav li {
   margin-bottom: 2rem;
 }
 
+.my-\[4svh\] {
+  margin-top: 4svh;
+  margin-bottom: 4svh;
+}
+
 .\!mb-0 {
   margin-bottom: 0px !important;
 }
@@ -1368,10 +1378,6 @@ nav li {
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .ml-3 {
@@ -1398,6 +1404,10 @@ nav li {
   margin-top: 1rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -1406,8 +1416,12 @@ nav li {
   margin-top: 2rem;
 }
 
-.mt-\[5vh\] {
-  margin-top: 5vh;
+.mt-\[3svh\] {
+  margin-top: 3svh;
+}
+
+.mt-\[4svh\] {
+  margin-top: 4svh;
 }
 
 .box-border {
@@ -1520,9 +1534,33 @@ nav li {
   aspect-ratio: 1 / 1;
 }
 
+.size-4 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .size-full {
   width: 100%;
   height: 100%;
+}
+
+.size-2 {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.size-3 {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.\!h-\[50\%\] {
+  height: 50% !important;
 }
 
 .\!h-\[55\%\] {
@@ -1541,10 +1579,6 @@ nav li {
   height: 80% !important;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
 .h-5 {
   height: 1.25rem;
 }
@@ -1553,17 +1587,8 @@ nav li {
   height: 1.5rem;
 }
 
-.h-\[80\%\] {
-  height: 80%;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
+.h-\[30vh\] {
+  height: 30vh;
 }
 
 .h-full {
@@ -1576,6 +1601,10 @@ nav li {
 
 .h-svh {
   height: 100svh;
+}
+
+.h-28 {
+  height: 7rem;
 }
 
 .max-h-\[95vh\] {
@@ -1658,8 +1687,8 @@ nav li {
   max-width: 42rem;
 }
 
-.max-w-36 {
-  max-width: 9rem;
+.max-w-32 {
+  max-width: 8rem;
 }
 
 .max-w-3xl {
@@ -1672,6 +1701,10 @@ nav li {
 
 .max-w-5xl {
   max-width: 64rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .max-w-\[400px\] {
@@ -2317,14 +2350,6 @@ nav li {
   justify-items: stretch;
 }
 
-.\!gap-10 {
-  gap: 2.5rem !important;
-}
-
-.gap-1 {
-  gap: 0.25rem;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
@@ -2343,6 +2368,10 @@ nav li {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .gap-x-4 {
@@ -2672,8 +2701,16 @@ nav li {
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 
 .rounded-b {
@@ -2847,8 +2884,8 @@ nav li {
   background-color: rgb(245 245 246 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/assets\/image\/Bulletin-adh\E9sion\.PNG\'\)\] {
-  background-image: url('/assets/image/Bulletin-adhésion.PNG');
+.bg-\[url\(\'\/assets\/image\/Bulletin\.PNG\'\)\] {
+  background-image: url('/assets/image/Bulletin.PNG');
 }
 
 .bg-\[url\(\'\/assets\/image\/charte-finale\.PNG\'\)\] {
@@ -2857,6 +2894,10 @@ nav li {
 
 .bg-\[url\(\'\/assets\/image\/plan-daction\.PNG\'\)\] {
   background-image: url('/assets/image/plan-daction.PNG');
+}
+
+.bg-\[url\(\'\/assets\/image\/Bulletin-adh\E9sion\.PNG\'\)\] {
+  background-image: url('/assets/image/Bulletin-adhésion.PNG');
 }
 
 .decoration-slice {
@@ -2991,6 +3032,10 @@ nav li {
   padding: 4rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -2999,17 +3044,13 @@ nav li {
   padding: 1rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-8 {
   padding: 2rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .px-3 {
@@ -3032,11 +3073,6 @@ nav li {
   padding-bottom: 2.5rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -3057,12 +3093,8 @@ nav li {
   padding-bottom: 1rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .text-left {
@@ -3676,40 +3708,6 @@ nav li {
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
-.\!section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 2rem;
-}
-
-@media (min-width: 768px) {
-  .\!section {
-    min-height: 100lvh;
-  }
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 2rem;
-}
-
-@media (min-width: 768px) {
-  .section {
-    min-height: 100lvh;
-  }
-}
-
-.\!section > div:first-of-type {
-  flex-grow: 1;
-}
-
-.section > div:first-of-type {
-  flex-grow: 1;
-}
-
 /* custom.css */
 
 @media (min-width: 640px) {
@@ -3807,25 +3805,30 @@ nav li {
     height: 1.25rem;
   }
 
-  .max-md\:max-w-\[80\%\] {
-    max-width: 80%;
+  .max-md\:w-\[80\%\] {
+    width: 80%;
   }
 
   .max-md\:flex-col {
     flex-direction: column;
   }
 
+  .max-md\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
   .max-md\:p-4 {
     padding: 1rem;
   }
 
-  .max-md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .max-md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
-  .max-md\:text-center {
-    text-align: center;
+  .max-md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -3835,19 +3838,52 @@ nav li {
   }
 }
 
+@media not all and (min-width: 400px) {
+  .max-xs\:order-5 {
+    order: 5;
+  }
+}
+
 @media (min-width: 640px) {
+  .sm\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
 }
 
 @media (min-width: 768px) {
-  .md\:flex {
-    display: flex;
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .md\:mt-8 {
+    margin-top: 2rem;
   }
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:size-5 {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .md\:size-4 {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .md\:size-3 {
+    width: 0.75rem;
+    height: 0.75rem;
   }
 
   .md\:h-auto {
@@ -3858,24 +3894,16 @@ nav li {
     width: 9rem;
   }
 
-  .md\:w-full {
-    width: 100%;
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .md\:max-w-36 {
+    max-width: 9rem;
   }
 
   .md\:max-w-lg {
     max-width: 32rem;
-  }
-
-  .md\:max-w-md {
-    max-width: 28rem;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
-  }
-
-  .md\:justify-between {
-    justify-content: space-between;
   }
 
   .md\:gap-6 {
@@ -3886,14 +3914,33 @@ nav li {
     padding: 4rem;
   }
 
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  .md\:p-4 {
+    padding: 1rem;
   }
 
-  .md\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 }
 

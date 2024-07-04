@@ -11,134 +11,155 @@
     <div class="loader">
       <img src="/assets/logo.jpg" alt="logo de CJD" class="w-[30vmin]" />
     </div>
-    <header id="header" class="flex items-end">
-      <img src="/assets/logo.jpg" alt="logo" class="md:w-36 w-28" />
-      <div class="flex grow flex-col flex-end">
-        <div
-          class="max-md:px-4 px-10 py-2 text-black text-xs font-bold bg-lightning-yellow-500 flex gap-4 justify-end"
-        >
-          <div class="flex gap-2 items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-phone"
-            ><path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-            <p class="">+237 657 38 59 45</p>
-          </div>
-          <div class="flex gap-2 items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-mail"
-            >
-              <rect width="20" height="16" x="2" y="4" rx="2" />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-            </svg>
-            <p class="">contact@cjd-asso.com</p>
-          </div>
-        </div>
-        <div
-          class="flex justify-end md:justify-between items-center py-3 px-10 max-md:px-4 bg-white"
-        >
-          <button
-            id="menu-toggle"
-            class="md:hidden block text-black focus:outline-none"
+    <header id="header" class="flex flex-col transition">
+      <div
+        class="max-md:px-6 px-24 py-2 text-black font-bold bg-lightning-yellow-500 flex gap-4 justify-end"
+      >
+        <div class="flex gap-1 items-center text-nowrap">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide size-3 md:size-4 lucide-phone"
           >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-          <nav class="nav hidden md:flex flex-grow justify-end">
-            <ul class="flex gap-3 text-black text-base font-bold">
-              <li class="autoAlpha">
-                <a
-                  href="/"
-                  class="hover:text-jungle-green-600"
-                  onclick="event.preventDefault(); route('/');"
-                  >Accueil</a
-                >
-              </li>
-              <li class="autoAlpha">
-                <a
-                  href="/"
-                  class="hover:text-jungle-green-600"
-                  onclick="event.preventDefault(); route('/#vision');"
-                  >Vision</a
-                >
-              </li>
-              <li class="autoAlpha">
-                <a
-                  href="/"
-                  class="hover:text-jungle-green-600"
-                  onclick="event.preventDefault(); route('/#missions');"
-                  >Missions</a
-                >
-              </li>
-              <li class="autoAlpha">
-                <a
-                  href="/"
-                  class="hover:text-jungle-green-600"
-                  onclick="event.preventDefault(); route('/#joinUs');"
-                  >Contact</a
-                >
-              </li>
-              <li class="autoAlpha">
-                <a
-                  href="/"
-                  class="hover:text-jungle-green-600"
-                  onclick="event.preventDefault(); route('/#sponsors');"
-                  >Sponsors</a
-                >
-              </li>
-              <li class="autoAlpha">
-                <a
-                  href="/"
-                  class="hover:text-jungle-green-600"
-                  onclick="event.preventDefault(); route('/#evenement');"
-                  >Events</a
-                >
-              </li>
-              <li class="autoAlpha">
-                <a
-                  href="/publications"
-                  class="hover:text-jungle-green-600"
-                  onclick="event.preventDefault(); route('/publications');"
-                  >Publications</a
-                >
-              </li>
-            </ul>
-          </nav>
-          <div
-            class="bgBlack hidden md:hidden fixed top-0 left-0 w-full h-svh bg-black/50"
-          ></div>
-          <nav
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+            />
+          </svg>
+          <p class="text-xs">+237 657 385 945</p>
+        </div>
+        <div class="flex gap-1 items-center text-nowrap">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide size-3 md:size-4 lucide-mail"
+          >
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+          <p class="text-xs">contact@cjd-asso.com</p>
+        </div>
+        <button type="button" class="relative size-5 translateBtn">
+          <img src="/assets//flags/fr.png" class="object-cover w-full rounded-full fr" alt="drapeau">
+          <img src="/assets//flags/en.png" class="object-cover w-full rounded-full en hidden" alt="drapeau">
+        </button>
+      </div>
+      <div
+        class="flex justify-between items-center mx-auto py-4 max-md:px-8 bg-white w-full max-w-7xl"
+      >
+        <img src="/assets/logo.jpg" alt="logo" class="w-28" />
+        <button
+          id="menu-toggle"
+          class="lg:hidden block text-black focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <nav class="nav hidden lg:flex flex-grow justify-end">
+          <ul class="flex gap-3 text-black text-base font-bold">
+            <li class="autoAlpha">
+              <a
+                href="/"
+                class="hover:text-jungle-green-600"
+                onclick="event.preventDefault(); route('/');"
+                data-translate="accueil"
+                >Accueil</a
+              >
+            </li>
+            <li class="autoAlpha">
+              <a
+                href="/"
+                class="hover:text-jungle-green-600"
+                onclick="event.preventDefault(); route('/#vision');"
+                data-translate="vision"
+                >Vision</a
+              >
+            </li>
+            <li class="autoAlpha">
+              <a
+                href="/"
+                class="hover:text-jungle-green-600"
+                onclick="event.preventDefault(); route('/#missions');"
+                data-translate="missions"
+                >Missions</a
+              >
+            </li>
+            <li class="autoAlpha">
+              <a
+                href="/"
+                class="hover:text-jungle-green-600"
+                onclick="event.preventDefault(); route('/#bureau');"
+                data-translate="bureau"
+                >Bureau</a
+              >
+            </li>
+            <li class="autoAlpha">
+              <a
+                href="/"
+                class="hover:text-jungle-green-600"
+                onclick="event.preventDefault(); route('/#joinUs');"
+                data-translate="contact"
+                >Contact</a
+              >
+            </li>
+            <li class="autoAlpha">
+              <a
+                href="/"
+                class="hover:text-jungle-green-600"
+                onclick="event.preventDefault(); route('/#sponsors');"
+                data-translate="sponsors"
+                >Sponsors</a
+              >
+            </li>
+            <li class="autoAlpha">
+              <a
+                href="/"
+                class="hover:text-jungle-green-600"
+                onclick="event.preventDefault(); route('/#evenement');"
+                data-translate="events"
+                >Events</a
+              >
+            </li>
+            <li class="autoAlpha">
+              <a
+                href="/publications"
+                class="hover:text-jungle-green-600"
+                onclick="event.preventDefault(); route('/publications');"
+                data-translate="publications"
+                >Publications</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="bgBlack hidden md:hidden fixed top-0 left-0 w-full h-svh bg-black/50"
+        ></div>
+        <nav
             id="mobile-menu"
             class="hidden md:hidden w-1/2 max-w-[400px] min-w-[250px] h-lvh fixed text-xl z-40 top-0 right-0 bg-white shadow-md"
           >
@@ -150,6 +171,7 @@
                   href="/"
                   class="block mx-auto text-center hover:text-jungle-green-600"
                   onclick="event.preventDefault(); route('/');"
+                  data-translate="accueil"
                   >Accueil</a
                 >
               </li>
@@ -158,6 +180,7 @@
                   href="/"
                   class="block mx-auto text-center hover:text-jungle-green-600"
                   onclick="event.preventDefault(); route('/#vision');"
+                  data-translate="vision"
                   >Vision</a
                 >
               </li>
@@ -166,6 +189,7 @@
                   href="/"
                   class="block mx-auto text-center hover:text-jungle-green-600"
                   onclick="event.preventDefault(); route('/#missions');"
+                  data-translate="missions"
                   >Missions</a
                 >
               </li>
@@ -174,6 +198,7 @@
                   href="/"
                   class="block mx-auto text-center hover:text-jungle-green-600"
                   onclick="event.preventDefault(); route('/#joinUs');"
+                  data-translate="contact"
                   >Contact</a
                 >
               </li>
@@ -182,6 +207,7 @@
                   href="/"
                   class="block mx-auto text-center hover:text-jungle-green-600"
                   onclick="event.preventDefault(); route('/#sponsors');"
+                  data-translate="sponsors"
                   >Sponsors</a
                 >
               </li>
@@ -190,6 +216,7 @@
                   href="/"
                   class="block mx-auto text-center hover:text-jungle-green-600"
                   onclick="event.preventDefault(); route('/#evenement');"
+                  data-translate="events"
                   >Events</a
                 >
               </li>
@@ -198,90 +225,110 @@
                   href="/publications"
                   class="block mx-auto text-center hover:text-jungle-green-600"
                   onclick="event.preventDefault(); route('/publications');"
+                  data-translate="publications"
                   >Publications</a
                 >
               </li>
             </ul>
           </nav>
-        </div>
       </div>
     </header>
 
-    <main id="main-content" class="grow"></main>
+    <main id="main-content"></main>
 
     <footer
-      class="bg-jungle-green-500 text-sm text-white pt-6 transition translate-y-52llm"
+      class="bg-jungle-green-500 text-sm text-white pt-3 transition translate-y-52llm"
     >
       <div class="mx-auto px-4">
         <div class="flex flex-wrap justify-center">
-          <div class="p-5 grow max-w-[50%]">
-            <img src="/assets/logo.jpg" alt="logo" class="w-32 md:w-36 block" />
+          <div class="p-2 md:p-4 grow max-w-[50%]">
+            <img src="/assets/logo.jpg" alt="logo" class="w-32 md:w-36 block mx-auto" />
           </div>
 
-          <div class="p-5 grow max-w-[50%]">
-            <h3 class="text-lg font-bold mb-2 text-nowrap">Liens Utiles</h3>
-            <ul class="list-none">
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-jungle-green-600"
-                  onclick="event.preventDefault(); route('/#header');"
-                  >Accueil</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/#vision');"
-                  >Vision</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/#missions');"
-                  >Missions</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/#joinUs');"
-                  >Contact</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/#sponsors');"
-                  >Sponsors</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/#evenement');"
-                  >Events</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/publications"
-                  class="hover:text-lightning-yellow-500"
-                  onclick="event.preventDefault(); route('/publications');"
-                  >Publications</a
-                >
-              </li>
-            </ul>
+          <div class="p-2 md:p-4 grow max-w-[50%]">
+            <h3 class="text-base md:text-sm font-bold mb-2 text-nowrap" data-translate="liens">Liens Utiles</h3>
+            <div class="flex gap-4">
+              <ul class="list-none">
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-jungle-green-600"
+                    onclick="event.preventDefault(); route('/#header');"
+                    data-translate="accueil"
+                    >Accueil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/#vision');"
+                    data-translate="vision"
+                    >Vision</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/#missions');"
+                    data-translate="missions"
+                    >Missions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/#bureau');"
+                    data-translate="bureau"
+                    >Bureau</a
+                  >
+                </li>
+              </ul>
+              <ul class="list-none">
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/#joinUs');"
+                    data-translate="contact"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/#sponsors');"
+                    data-translate="sponsors"
+                    >Sponsors</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/#evenement');"
+                    data-translate="events"
+                    >Events</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/publications"
+                    class="hover:text-lightning-yellow-500"
+                    onclick="event.preventDefault(); route('/publications');"
+                    data-translate="publications"
+                    >Publications</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="p-5 grow max-w-[50%]">
-            <h3 class="text-lg font-bold mb-2 text-nowrap">Contactez-nous</h3>
+          <div class="p-2 md:p-4 grow max-w-[50%]">
+            <h3 class="text-base md:text-sm font-bold mb-2 text-nowrap" data-translate="contactUs">Contactez-nous</h3>
             <ul class="list-none">
               <li class="flex items-center mb-2">
                 <svg
@@ -298,9 +345,10 @@
                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
                   />
                 </svg>
-                +237 657 38 59 45
+                +237 657 385 945
               </li>
-              <li class="flex items-center">
+              <li class="flex items-center text-nowrap
+              ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5 mr-2"
@@ -319,8 +367,8 @@
             </ul>
           </div>
 
-          <div class="p-5 grow">
-            <h3 class="text-lg font-bold mb-2 text-nowrap">Suivez-nous</h3>
+          <div class="p-2 md:p-4 grow">
+            <h3 class="text-base md:text-sm font-bold mb-2 text-nowrap" data-translate="followUs">Suivez-nous</h3>
             <ul class="flex space-x-4">
               <li>
                 <a
@@ -380,7 +428,7 @@
           </div>
         </div>
 
-        <div class="border-t border-whit py-4 text-center text-xs">
+        <div class="border-t border-whit py-2 text-center text-xs" data-translate="allright">
           <p>&copy; 2024 CJD. Tous droits réservés.</p>
         </div>
       </div>
@@ -390,13 +438,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="/src/script.js"></script>
-    <script src="/src/route.js"></script>
-    <script>
-      lucide.createIcons();
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    
+    <script src="/src/translate.js"></script>
+    <script src="/src/script.js"></script>
+    <script src="/src/route.js"></script>
   </body>
 </html>

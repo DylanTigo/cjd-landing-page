@@ -10,7 +10,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-white overflow-x-hidden font-levenim flex flex-col justify-between;
+    @apply bg-white overflow-x-hidden font-levenim;
   }
   h1 {
     @apply lg:text-5xl md:text-4xl text-3xl mx-auto font-black text-pretty text-center;
@@ -30,7 +30,7 @@
   }
 
   .hero-title, .title{
-    @apply lg:text-5xl text-4xl font-bold mb-6 font-gothic
+    @apply lg:text-5xl text-4xl font-bold mb-7 font-gothic
   }
   .title {
     @apply w-fit mx-auto relative z-10;
@@ -50,7 +50,7 @@
   }
 
   .mini-title{
-    @apply relative w-fit z-10 text-lg lg:text-2xl font-bold font-gothic block mx-auto
+    @apply relative md:mb-7 mb-3 w-fit z-10 text-center mx-auto text-3xl lg:text-4xl font-bold font-gothic
   }
   .mini-title::after{
     @apply bg-lightning-yellow-500/50
@@ -106,15 +106,15 @@
     @apply text-sm;
   }
   .profile-card p {
-    @apply text-base mb-4 font-bold;
+    @apply text-base mb-2 font-bold;
   }
-
+  
   .btn {
     @apply flex gap-4 w-fit px-10 py-4 mt-8 rounded-lg text-xl text-black font-bold bg-lightning-yellow-500 hover:bg-lightning-yellow-400 active:bg-lightning-yellow-700;
   }
 
   #joinUs .logo {
-    @apply p-2 !h-24 md:!h-32 w-auto flex items-center;
+    @apply p-2 !h-24 md:!h-32 w-auto flex items-center max-h-[15vh];
   }
   #joinUs .logo img{
     @apply object-cover w-full h-full
@@ -124,7 +124,7 @@
     @apply flex gap-3 mx-auto shrink-0;
   }
   .gallery .item {
-    @apply h-48 w-auto md:h-64 list-none shrink-0 p-[2px];
+    @apply h-56 w-auto md:h-72 list-none shrink-0 p-[2px];
   }
   .gallery img {
     @apply w-full h-full object-cover object-center rounded;
@@ -155,11 +155,5 @@
   }
   .errorInput{
     @apply border-2 border-red-600 animate-error
-  }
-  .section{
-    @apply  md:min-h-lvh pt-8 flex flex-col justify-between 
-  }
-  .section > div:first-of-type{
-    @apply grow
   }
 }
