@@ -94,7 +94,7 @@
   }
 
   .profile-card {
-    @apply grow p-2 rounded-md bg-white flex flex-col items-center justify-between text-center transition-all duration-300 ease-in-out text-black shadow-lg cursor-pointer sm:max-w-60 sm:min-w-36 xs:max-w-[47%] max-w-[80%]
+    @apply grow p-2 rounded-md bg-white flex flex-col items-center justify-between text-center transition-all duration-300 ease-in-out text-black shadow-lg cursor-pointer sm:max-w-52 sm:min-w-32 xs:max-w-[47%] max-w-[80%]
   }
   .profile-card img {
     @apply w-full aspect-square rounded object-cover mb-2;
@@ -103,18 +103,21 @@
     @apply flex flex-col justify-start text-black grow;
   }
   .profile-card h3 {
-    @apply text-base;
+    @apply text-sm;
   }
   .profile-card p {
-    @apply text-xl mb-4 font-bold;
+    @apply text-base mb-2 font-bold;
   }
-
+  
   .btn {
     @apply flex gap-4 w-fit px-10 py-4 mt-8 rounded-lg text-xl text-black font-bold bg-lightning-yellow-500 hover:bg-lightning-yellow-400 active:bg-lightning-yellow-700;
   }
 
   #joinUs .logo {
-    @apply p-2 !h-24 md:!h-32 w-auto;
+    @apply p-2 !h-24 md:!h-32 w-auto flex items-center max-h-[15vh];
+  }
+  #joinUs .logo img{
+    @apply object-cover w-full h-full
   }
 
   .gallery {

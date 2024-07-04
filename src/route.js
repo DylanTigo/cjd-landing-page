@@ -52,6 +52,11 @@ function handleLocation() {
     .then((html) => {
       document.getElementById("main-content").innerHTML = html;
 
+      if (currentLanguage === "en") {
+        console.log(currentLanguage);
+        traductor()
+      }
+
       if (anchor) {
         const element = document.querySelector(anchor);
         if (element) {

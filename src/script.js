@@ -324,7 +324,23 @@ function initializeAnimations() {
   });
 }
 
-// window.addEventListener("DOMContentLoaded", () => {
-//   initializeScript();
-//   initializeAnimations();
-// });
+let currentLanguage = "fr"
+function handlelLanguage(language){
+  currentLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
+  flagFr.classList.toggle("hidden")
+  flagEn.classList.toggle("hidden")
+  traductor()
+}
+
+function traductor () {
+  document.querySelectorAll('[data-translate]').forEach(element => {
+    const key = element.getAttribute('data-translate');
+    element.textContent = translations[currentLanguage][key];
+  });
+}
+const translateBtn = document.querySelector(".translateBtn")
+const flagFr = document.querySelector(".translateBtn .fr")
+const flagEn = document.querySelector(".translateBtn .en")
+const navElement = document.querySelectorAll("nav ul li a")
+
+translateBtn.addEventListener("click", handlelLanguage)
